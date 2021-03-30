@@ -1,0 +1,23 @@
+{
+  "name": "projeto-integrador",
+  "version": "1.0.0",
+  "description": "Projeto Integrador",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leowingss/projeto-integrador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leowingss/projeto-integrador/issues"
+  },
+  "homepage": "https://github.com/leowingss/projeto-integrador#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
