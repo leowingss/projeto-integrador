@@ -6,3 +6,8 @@ const controlador = require("../controller/produtosController")
 router.get('/', controlador.titulo);
 
 module.exports = router;
+
+router.get('/promocoes', function(req, res, next) {
+    res.render('promocoes', { title: 'Promoções' });
+  });
+  
