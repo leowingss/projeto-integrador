@@ -36,10 +36,8 @@ body{
     padding-left: 5px;
     border-radius: 7px;
     
-
-
-    
 }
+
 button{
 background-color:rgb(255, 240, 30);
 width: 100%;
@@ -50,6 +48,7 @@ margin-top:25px;
 font-size:large;
 opacity: 0.8;
 }
+
 button:hover{
 background-color: rgb(238, 215, 12);
 
