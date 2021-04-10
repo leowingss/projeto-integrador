@@ -1,7 +1,8 @@
 var router = require
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title> ProjetoDH</title>
 
 </head>
@@ -19,14 +20,44 @@ var router = require
             <ul>
             <li><a href=""><img src="/img/whats.png"/></a></li>
             <li><a href=""><img src="/img/face.png"/></a></li>
-
-            </ul>
-          
+            
             <a href="login.ejs" class="btn-login">Login</a>
-        
-    </div>
+
+              
+            </ul>
+
+        </div>
         </div>
 </main>
     </header>
-</body>
+    <main>
+        <main class="col-100 menu-urls">
+       <div class="header-2">
+           <di class="menu">
+               <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="">Promoções</a></li>
+                   <li><a href="">Sports Indoor</a></li>
+                   <li><a href="">Sports Outdoor</a></li>
+               </ul>
+           </di>
+           <div class="busca">
+               <input placeholder="Pesquisa" type="text"/>
+
+           </div>
+       </div>
+       </main>
+    </main>   
+    <div class="col-100">
+        <div class="slider-principal">
+            <img src="/img/slide3.png"/>
+            <img src="/img/slide1.png"/>
+            <img src="/img/slide2.png"/>
+        </div>
+    </div> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script> 
+</body> 
 </html>
