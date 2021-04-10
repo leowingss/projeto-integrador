@@ -1,140 +1,76 @@
-body{
-    width: 100%;  
-    height:100%;
-    margin: 0 auto;
-    }
-    .menu-principal {
-    width: 100%;
-    background-color: black;
-    height: 150px;
-    }
-    main {
-        margin: 0 auto;
-        width: 980px;
-        position: relative;
-    }
-    .logo {
-        float: left;
-        padding: 0px;
-        width:30%;
-    }
-    .redes-sociais ul li {
-        margin-left: 25px;
-        display: inline-block;
-        list-style: none;
-    }
-    .redes-sociais{
-        width: 30%;
-        float: right;
-    }
-    
-    .header-2 {
-        background-color: rgb(253, 253, 253) ;
-        width: 100%;
-        border-bottom: 3px solid grey;
-        padding: 1px;
-    }
-    .menu-urls {
-        height: 80px;
-        border-bottom: 3px solid yellow;
-    
-    }
-    .menu ul li {
-        display: inline-block;
-        color:black;
-        margin-left: 10px;
-        height: 58px;
-    }
-    .menu ul li:hover {
-        border-bottom: 3px solid gray;
-    }
-    .menu ul li a:hover {
-        color:gray;
-    }
-    .menu ul li a{
-        color:black;
-        text-decoration: none;
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-    .menu {
-        width: 70%;
-        float: left;
-    }
-    .busca {
-        text-align: center;
-        width: 30%;
-        float: right;
-    }
-    .busca input{
-        background-image: url('../img/lupa.png');
-        background-repeat: no-repeat;
-        height:36px;
-        padding: 5px;
-        width: 190px;
-        margin-top: 14px;
-        background-position: 98%;
-        border: 2px solid slategray;
-    
-    }
-    .col-100 {
-        width: 100%;
-        float: left;
-        position: relative;
-    }
-    button.slick-prev {
-        font-size: 0px;
-        border: none;
-        width: 50px;
-        height: 50px;
-        z-index: 9;
-        background-color: transparent;
-        position: absolute;
-        background-image:url('../img/seta1.png');
-        top: 35%;
-        left: 14%;   
-    }
-    button.slick-next {
-        font-size: 0px;
-        border: none;
-        width: 50px;
-        height: 50px;
-        z-index: 9;
-        background-color: transparent;
-        position: absolute;
-        background-image:url('../img/seta2.png');
-        top: 35%;
-        right: 14%;
-    }
-    .slider-list {
-        width: 100%!important;
-    }
-    .slick-initialized {
-        overflow:hidden;
-    }
-    .slick-dots li button {
-        font-size: 0px;
-        border: 5px solid white;
-        width: 26px;
-        height: 26px;
-        background: transparent;
-        border-radius: 50%;
-        cursor: pointer;
-    
-    }
-    
-    .slick-dots {
-        margin: 0 auto;
-        width: 50%;
-        position: absolute;
-        left:50%;
-        top: 350px;
-    }
-    
-    li.slick-active button{
-        background-color: yellow;
-    }
-    .slick-dots li {
-        padding-left: 10px;
-        display: inline-block
-    }
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+main {
+  margin: 0 auto;
+  width: 980px;
+  position: relative;
+}
+
+.logo {
+  padding: 0px;
+  width: 30%;
+}
+
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-color: transparent;
+  position: absolute;
+  background-image: url("../img/seta1.png");
+  top: 35%;
+  left: 14%;
+}
+button.slick-next {
+  font-size: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-color: transparent;
+  position: absolute;
+  background-image: url("../img/seta2.png");
+  top: 35%;
+  right: 14%;
+}
+
+.slider-list {
+  width: 100% !important;
+}
+
+.slick-initialized {
+  overflow: hidden;
+}
+
+.slick-dots li button {
+  font-size: 0px;
+  border: 5px solid white;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots {
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 350px;
+}
+
+li.slick-active button {
+  background-color: yellow;
+}
+
+.slick-dots li {
+  padding-left: 10px;
+  display: inline-block;
+}
