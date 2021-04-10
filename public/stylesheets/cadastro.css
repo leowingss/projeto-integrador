@@ -27,6 +27,9 @@ body{
 .cardtop{
     text-align: center;
 }
+#conta{
+    color: goldenrod;
+}
 .endereço > input{
     outline: none;
     width: 250px;
