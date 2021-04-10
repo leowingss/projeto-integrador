@@ -18,8 +18,8 @@ body{
     width: 400px;
 }
 #avatar{
-    height: 110px;
-    width: 110px;
+    /* height: 110px; */
+    width: 250px;
     border-radius: 80px;
     box-shadow: 5px 10px 10px rgb(180, 180, 8);
 }
