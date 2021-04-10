@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(241, 230, 216);
+ }
+.form{
+    
+    width: 400px;
+    margin:auto;
+    padding-top:40px;
+}
+.card{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 4, 4);
+    box-shadow:1px 1px 5px rgb(160, 138, 11);
+    padding:30px 20px 60px 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+}
+#avatar{
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    box-shadow: 5px 10px 10px rgb(180, 180, 8);
+}
+.cardtop{
+    text-align: center;
+}
+.endereço > input{
+    outline: none;
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(221, 224, 224);
+    padding-left: 5px;
+    border-radius: 7px;
+    
+}
+
+button{
+background-color:rgb(255, 240, 30);
+width: 100%;
+height: 40px;
+padding: 10px;
+border-radius: 7px;
+margin-top:25px;
+font-size:large;
+opacity: 0.8;
+}
+
+button:hover{
+background-color: rgb(238, 215, 12);
+
+}
+#icone{
+    margin-top:20px;
+}

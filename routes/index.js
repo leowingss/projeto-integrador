@@ -5,9 +5,13 @@ const controlador = require("../controller/produtosController")
 /* GET home page. */
 router.get('/', controlador.titulo);
 
-module.exports = router;
-
 router.get('/promocoes', function(req, res, next) {
-    res.render('promocoes', { title: 'Promoções' });
-  });
-  
+  res.render('promocoes', { title: 'Promoções' });
+});
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'login' });
+});
+router.get('/cadastro', function(req, res, next) {
+  res.render('cadastro', { title: 'cadastro' });
+});
+module.exports = router;
