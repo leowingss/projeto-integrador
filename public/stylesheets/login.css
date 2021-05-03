@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body{
     background-color:rgb(241, 230, 216);
     margin: 0px 0px 0px 0px;
-
+    font-family: 'Lato', sans-serif;
  }
 .form{
     width: 400px;
@@ -13,7 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    padding:30px 20px 60px 20px;
+    padding:30px 20px 30px 20px;
     border-radius: 10px;
     height: 400px;
     width: 400px;
@@ -23,6 +25,7 @@ body{
     width: 250px;
     border-radius: 80px;
     box-shadow: 5px 10px 10px rgb(180, 180, 8);
+    margin-bottom: 10px;
 }
 .cardtop{
     text-align: center;
@@ -56,6 +59,7 @@ border: 0px;
 }
 button:hover{
     background-color: rgb(238, 215, 12);
+    cursor: pointer;
 
 }
 #icone{
