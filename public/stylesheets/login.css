@@ -27,14 +27,16 @@ body{
 .cardtop{
     text-align: center;
 }
-.endereço > input{
-    
+.e-s{
+    outline: none;
     margin: 5px;
     background-color: rgb(221, 224, 224);
     height: 30px;
     width: 250px;
     padding-left: 5px;
     border-radius: 7px;
+    padding-left: 30px;
+    border: 0px;
 }
 
 #log{
@@ -50,6 +52,7 @@ border-radius: 7px;
 margin:25px 5px;
 font-size:large;
 opacity: 0.8;
+border: 0px;
 }
 button:hover{
     background-color: rgb(238, 215, 12);
@@ -65,5 +68,15 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+}
+.senha-icon,
+.user-icon{
+    position:relative;
+}
+.senha-icon i,
+.user-icon i{
+    position:absolute;
+    left: 13px;
+    top:13px;
+    color: rgb(61, 59, 59);
 }

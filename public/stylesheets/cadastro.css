@@ -12,9 +12,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(5, 4, 4);
-    box-shadow:1px 1px 5px rgb(160, 138, 11);
-    padding:30px 20px 60px 20px;
+    background-color: rgb(10, 10, 10);
+    
+    padding:40px 20px 60px 20px;
     border-radius: 10px;
     height: 400px;
     width: 400px;
@@ -31,15 +31,15 @@ body{
 #conta{
     color: goldenrod;
 }
-.endereço > input{
+.e-s{
     outline: none;
     width: 250px;
     height: 30px;
-    margin: 5px;
+    margin: 0px;
     background-color: rgb(221, 224, 224);
-    padding-left: 5px;
+    padding-left: 30px;
     border-radius: 7px;
-    
+    border: 0px;
 }
 
 button{
@@ -51,6 +51,7 @@ border-radius: 7px;
 margin-top:25px;
 font-size:large;
 opacity: 0.8;
+border:0px
 }
 
 button:hover{
@@ -59,4 +60,15 @@ background-color: rgb(238, 215, 12);
 }
 #icone{
     margin-top:20px;
+}
+.senhaicon,
+.usericon{
+    position:relative;
+}
+.senhaicon i,
+.usericon i{
+    position:absolute;
+    left: 10px;
+    top:7px;
+    color: rgb(110, 100, 100);
 }

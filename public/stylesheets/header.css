@@ -73,3 +73,12 @@
   background-position: 98%;
   border: 2px solid slategray;
 }
+.btn-login{
+  font-size: 23px;
+  color: bisque;
+  font-style:inherit;
+  margin-bottom: 60px;
+}
+ul li .btn-login{
+  list-style-type: none;
+}
