@@ -1,8 +1,66 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
+.carrossel {
+    display: grid;
+    height: 60vh;
+    margin: 10px;
+    place-items: center;
+}
+
+.itens-carrossel {
+    width: 90vw;
+}
+
+.itens {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item {
+    flex: none;
+
+    width: 100%;
+    height: 700px;
+    scroll-snap-align: start;
+
+    pointer-events: none;
+
+}
+
+.indoor {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grade {
+    display: grid;
+    padding: 200px;
+    margin: 30px;
+}
+
+.artigos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 4fr));
+    grid-template-rows: 300px;
+    grid-gap: 2rem 2rem;
+}
+
+.produto {
+    height: 300px;
+
+}
+
+.indoor2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
