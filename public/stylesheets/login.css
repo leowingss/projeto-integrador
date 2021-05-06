@@ -19,6 +19,7 @@ body{
     border-radius: 10px;
     height: 400px;
     width: 400px;
+    margin-bottom: 40px;
 }
 #avatar{
     /* height: 110px; */
