@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .menu-principal {
   width: 100%;
   background-color: black;
@@ -74,4 +76,14 @@
   width: 190px;
   background-position: 98%;
   border: 2px solid slategray;
+}
+a.btn-login{
+  font-size: 23px;
+  color: bisque;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 60px;
+  text-decoration: none;
+}
+a.btn-login:hover{
+  color: rgba(248, 211, 3, 0.966);
 }

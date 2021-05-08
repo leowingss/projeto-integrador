@@ -39,26 +39,48 @@ footer {
     border-bottom: 3px solid yellow;
 }
 
-.promocoes ul li {
-    display: inline-block;
-    color: black;
-    margin-left: 10px;
+.opcoes {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.promocoes ul li:hover {
+.opcoes #eq #fem #masc {
+    position: relative;
+}
+
+.opcoes .equipamentos,
+.feminino,
+.masculino {
+    position: absolute;
+    display: none;
+}
+
+.opcoes li:hover ul {
+    display: block;
+}
+
+.opcoes li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.opcoes li:hover {
     border-bottom: 3px solid gray;
     margin-bottom: -3px;
 }
 
-.promocoes ul li a:hover {
+.opcoes ul li a:hover {
     color: gray;
 }
 
-.promocoes ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
+.opcoes .equipamentos,
+.feminino,
+.masculino {
+    width: 175px;
+    height: 100px;
+    background-color: yellow;
 }
 
 .produtos {
