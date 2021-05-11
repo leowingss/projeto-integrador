@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/promocoes.css">
-    <title>Teste</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/slick.css" />
+    <title>Promoções</title>
 </head>
 
 <body>
@@ -15,82 +17,87 @@
 
 
         <!-- Slide de imagens -->
-        <div class="slider">
-            <h1>Equipamentos de Musculação</h1>
-        </div>
 
+        <%- include('partials/slide') %>
 
-        <!-- Slide de imagens -->
+            <!-- Slide de imagens -->
 
-        <!-- Menu -->
-        <nav>
-            <ul class="opcoes">
-                <li id="eq"><a href="#">EQUIPAMENTOS</a>
-                    <ul class="equipamentos">
-                        <li><a href="#">Musculação</a></li>
-                        <li><a href="#">Natação</a></li>
-                        <li><a href="#">Bikes</a></li>
-                        <li><a href="#">Esteira</a></li>
-                    </ul>
-                </li>
-                <li id="fem"><a href="#">FEMININO</a>
-                    <ul class="feminino">
-                        <li><a href="#">Tênis</a></li>
-                        <li><a href="#">Calças</a></li>
-                        <li><a href="#">Tops</a></li>
-                        <li><a href="#">Blusas</a></li>
-                    </ul>
-                </li>
-                <li id="masc"><a href="#">MASCULINO</a>
-                    <ul class="masculino">
-                        <li><a href="#">Camisetas</a></li>
-                        <li><a href="#">Calças</a></li>
-                        <li><a href="#">Calçados</a></li>
-                        <li><a href="#">Blusas</a></li>
-                    </ul>
-            </ul>
-        </nav>
-        </div>
+            <!-- Menu -->
+            <nav>
+                <ul class="opcoes">
+                    <li id="eq"><a href="#">EQUIPAMENTOS</a>
+                        <ul class="equipamentos">
+                            <li><a href="#">Musculação</a></li>
+                            <li><a href="#">Natação</a></li>
+                            <li><a href="#">Bikes</a></li>
+                            <li><a href="#">Esteira</a></li>
+                        </ul>
+                    </li>
+                    <li id="fem"><a href="#">FEMININO</a>
+                        <ul class="feminino">
+                            <li><a href="#">Tênis</a></li>
+                            <li><a href="#">Calças</a></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Blusas</a></li>
+                        </ul>
+                    </li>
+                    <li id="masc"><a href="#">MASCULINO</a>
+                        <ul class="masculino">
+                            <li><a href="#">Camisetas</a></li>
+                            <li><a href="#">Calças</a></li>
+                            <li><a href="#">Calçados</a></li>
+                            <li><a href="#">Blusas</a></li>
+                        </ul>
+                </ul>
+            </nav>
+            </div>
 
-        <!-- Menu -->
+            <!-- Menu -->
 
-        <!-- Seção de produtos -->
-        <section class="produtos">
-            <section class="item">
-                <img src="/images/bike.png" alt="bike">
-                <p>Bike</p>
+            <!-- Seção de produtos -->
+            <section class="produtos">
+                <section class="item">
+                    <img src="/images/bike.png" alt="bike">
+                    <p>Bike</p>
+                </section>
+                <section class="item">
+                    <img src="/images/esteira.png" alt="esteira">
+                    <p>Esteira</p>
+                </section>
+                <section class="item">
+                    <img src="/images/eliptico.png" alt="eliptico">
+                    <p>Eliptico</p>
+                </section>
+                <section class="item">
+                    <img src="/images/halter.png" alt="halter">
+                    <p>Halter</p>
+                </section>
+                <section class="item">
+                    <img src="/images/colchonete.png" alt="colchonete">
+                    <p>Colchonete</p>
+                </section>
+                <section class="item">
+                    <img src="/images/bola.png" alt="bola">
+                    <p>Bola</p>
+                </section>
+
             </section>
-            <section class="item">
-                <img src="/images/esteira.png" alt="esteira">
-                <p>Esteira</p>
-            </section>
-            <section class="item">
-                <img src="/images/eliptico.png" alt="eliptico">
-                <p>Eliptico</p>
-            </section>
-            <section class="item">
-                <img src="/images/halter.png" alt="halter">
-                <p>Halter</p>
-            </section>
-            <section class="item">
-                <img src="/images/colchonete.png" alt="colchonete">
-                <p>Colchonete</p>
-            </section>
-            <section class="item">
-                <img src="/images/bola.png" alt="bola">
-                <p>Bola</p>
-            </section>
-
-        </section>
-        <!-- Seção de produtos -->
+            <!-- Seção de produtos -->
 
 
-        <!-- Footer da página Home -->
-        <footer>
-            <h2>Cabeçalho</h2>
-        </footer>
+            <!-- Footer da página Home -->
+            <footer>
+                <h2>Cabeçalho</h2>
+            </footer>
 
-        <!-- Footer da página Home -->
+            <!-- Footer da página Home -->
+
+
+            <script type="text/javascript" src="/stylesheets/jquery.js"></script>
+            <script type="text/javascript" src="/stylesheets/jquery-migrate.js"></script>
+            <script type="text/javascript" src="/stylesheets/slick.min.js"></script>
+            <script type="text/javascript" src="/main.js"></script>
+
 </body>
 
 </html>

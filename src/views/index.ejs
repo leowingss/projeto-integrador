@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/slick.css"/>
-    <title> <%= title %> </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/slick.css" />
+    <title>
+        <%= title %>
+    </title>
 </head>
+
 <body>
 
     <%- include('partials/header') %>
 
-    <div class="col-100">
-        <div class="slider-principal">
-            <img src="/img/slide3.png"/>
-            <img src="/img/slide1.png"/>
-            <img src="/img/slide2.png"/>
-        </div>
-    </div>
-    <script type="text/javascript" src="/stylesheets/jquery.js"></script>
-    <script type="text/javascript" src="/stylesheets/jquery-migrate.js"></script>
-    <script type="text/javascript" src="/stylesheets/slick.min.js"></script>
-    <script type="text/javascript" src="/main.js"></script>
+        <%- include('partials/slide')%>
+
+            <script type="text/javascript" src="/stylesheets/jquery.js"></script>
+            <script type="text/javascript" src="/stylesheets/jquery-migrate.js"></script>
+            <script type="text/javascript" src="/stylesheets/slick.min.js"></script>
+            <script type="text/javascript" src="/main.js"></script>
 </body>
+
 </html>
