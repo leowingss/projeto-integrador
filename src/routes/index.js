@@ -24,6 +24,7 @@ router.get("/indoor", (req, res, next) => {
 });
 
 router.get("/products", (req, res, next) => {
+    // const { id } = req.params;
     res.render("products", { title: "Halter" });
 });
 
