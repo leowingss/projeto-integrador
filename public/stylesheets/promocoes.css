@@ -16,11 +16,6 @@ body {
     align-items: center;
 }
 
-
-/* .produtos .item img {
-    width: 300px;
-} */
-
 .slider {
     background-color: yellow;
     width: 100%;
@@ -100,7 +95,8 @@ footer {
 .item {
     max-width: 20%;
     height: 100%;
-    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 50%), 0 2px 4px rgb(0 0 0 / 50%);
     width: 100%;
     margin: 30px;
     display: flex;
@@ -116,7 +112,6 @@ footer {
 }
 
 .item img:hover {
-    /* border: yellow 5px solid; */
     transition: all 0.5s;
 }
 
@@ -139,12 +134,20 @@ button {
     color: gray;
     border: none;
     border-radius: 6px;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 30px;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+span {
+    background-color: gray;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
 }
 
 @media screen and (max-width:400px) {
