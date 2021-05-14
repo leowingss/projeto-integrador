@@ -7,38 +7,16 @@ body {
     margin: 0;
 }
 
-.container {
+
+/* footer {
     background-color: black;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.slider {
-    background-color: yellow;
-    width: 100%;
-    height: 200px;
-    display: flex;
-}
-
-footer {
-    background-color: black;
-}
-
-.promocoes {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 3px solid yellow;
-}
+} */
 
 .opcoes {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 50%), 0 0 0 rgb(0 0 0 / 50%);
 }
 
 .opcoes #eq #fem #masc {
