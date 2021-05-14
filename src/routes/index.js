@@ -5,23 +5,28 @@ const controlador = require("../controller/produtosController")
 /* GET home page. */
 router.get("/", controlador.home);
 
-router.get("/index", function(req, res, next) {
+router.get("/index", (req, res, next) => {
     res.render("index", { title: "Home" });
 });
 
 router.get("/promocoes", controlador.promo);
 
-router.get("/login", function(req, res, next) {
+router.get("/login", (req, res, next) => {
     res.render("login", { title: "login" });
 });
 
-router.get("/cadastro", function(req, res, next) {
+router.get("/cadastro", (req, res, next) => {
     res.render("cadastro", { title: "cadastro" });
 });
 
-router.get("/indoor", function(req, res, next) {
+router.get("/indoor", (req, res, next) => {
     res.render("indoor", { title: "Sports Indoor" });
 });
+
+router.get("/products", (req, res, next) => {
+    res.render("products", { title: "Halter" });
+});
+
 
 
 

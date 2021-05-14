@@ -108,6 +108,12 @@ body {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
 button {
     margin: 10px;
     background-color: rgb(255, 238, 0);

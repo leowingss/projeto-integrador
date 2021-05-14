@@ -4,7 +4,8 @@ const constroller = {
     },
     promo: (req, res, next) => {
         res.render("promocoes", { title: "Promoções" });
-    }
+    },
+
 };
 
 module.exports = constroller;
