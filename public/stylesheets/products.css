@@ -66,7 +66,12 @@ span {
 
 .description span {
     text-align: center;
-    text-decoration: whitesmoke;
+    font-size: 1.4rem;
+}
+
+.sub-products h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .description button {
@@ -86,3 +91,70 @@ span {
     background-color: #ffee00;
     transition: all 0.5s;
 }
+
+.sub-products {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.item {
+    max-width: 20%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 90%), 0 2px 4px rgb(0 0 0 / 90%);
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-products .item button {
+    margin: 10px;
+    background-color: rgb(255, 238, 0);
+    color: gray;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+.sub-products .item button:hover {
+    cursor: pointer;
+}
+
+.item img {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.item img:hover {
+    transition: all 0.5s;
+}
+
+.item:hover {
+    border-radius: 10%;
+    transition: all 0.5s;
+    border: yellow 5px solid;
+}
+
+
+/* 
+@media screnn and (max-width:400px) {
+    .image {
+        flex-direction: column;
+    }
+    .description {
+        flex-direction: column;
+    }
+} */
