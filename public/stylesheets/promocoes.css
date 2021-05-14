@@ -133,6 +133,20 @@ footer {
     width: 100%;
 }
 
+button {
+    margin: 10px;
+    background-color: rgb(255, 238, 0);
+    color: gray;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width:400px) {
     .produtos {
         flex-direction: column;
