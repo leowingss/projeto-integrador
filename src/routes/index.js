@@ -23,6 +23,9 @@ router.get("/indoor", function(req, res, next) {
     res.render("indoor", { title: "Sports Indoor" });
 });
 
+router.get("/femininoIndoor", function(req, res, next) {
+    res.render("femininoIndoor", { title: "feminino Indoor" });
+});
 
 
 module.exports = router;
