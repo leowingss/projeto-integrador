@@ -10,7 +10,7 @@ body{
 
 .footer{
     position: absolute;
-    background-color: black;
+    background: black;
     height: auto;
     width: 100vw;
     font-family:"Open Sans";
