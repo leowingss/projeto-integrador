@@ -23,6 +23,4 @@ router.get("/indoor", function(req, res, next) {
     res.render("indoor", { title: "Sports Indoor" });
 });
 
-
-
 module.exports = router;
