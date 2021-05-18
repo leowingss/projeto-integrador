@@ -19,6 +19,7 @@ body{
 }
 
 .footer-content{
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +28,7 @@ body{
 }
 
 .footer-content h3{
+    color: white;
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -34,6 +36,7 @@ body{
 }
 
 .footer-content p{
+    color: white;
     max-width: 500px;
     margin: 10px;
     line-height: 28px;
@@ -54,11 +57,11 @@ body{
 
 .socials a{
     text-decoration: none;
-    color: yellow;
+    color:white;
 }
 
 .socials a i{
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     transition: color .4s ease;    
 }
 
