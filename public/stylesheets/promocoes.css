@@ -114,7 +114,7 @@ a {
     font-size: 1.2rem;
 }
 
-button {
+.btn {
     margin: 10px;
     background-color: rgb(255, 238, 0);
     color: gray;
@@ -125,7 +125,7 @@ button {
     font-size: 1.2rem;
 }
 
-button:hover {
+.btn:hover {
     cursor: pointer;
 }
 
@@ -135,6 +135,7 @@ span {
     font-size: 1.5rem;
     text-align: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:400px) {
