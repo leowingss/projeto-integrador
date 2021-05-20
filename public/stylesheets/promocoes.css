@@ -7,56 +7,6 @@ body {
     margin: 0;
 }
 
-
-/* footer {
-    background-color: black;
-} */
-
-.opcoes {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: 0 1px 2px rgb(0 0 0 / 50%), 0 0 0 rgb(0 0 0 / 50%);
-}
-
-.opcoes #eq #fem #masc {
-    position: relative;
-}
-
-.opcoes .equipamentos,
-.feminino,
-.masculino {
-    position: absolute;
-    display: none;
-}
-
-.opcoes li:hover ul {
-    display: block;
-}
-
-.opcoes li a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.opcoes li:hover {
-    border-bottom: 3px solid gray;
-    margin-bottom: -3px;
-}
-
-.opcoes ul li a:hover {
-    color: gray;
-}
-
-.opcoes .equipamentos,
-.feminino,
-.masculino {
-    width: 175px;
-    height: 100px;
-    background-color: yellow;
-}
-
 .produtos {
     width: 100%;
     height: 100%;
@@ -114,7 +64,7 @@ a {
     font-size: 1.2rem;
 }
 
-button {
+.btn {
     margin: 10px;
     background-color: rgb(255, 238, 0);
     color: gray;
@@ -125,7 +75,7 @@ button {
     font-size: 1.2rem;
 }
 
-button:hover {
+.btn:hover {
     cursor: pointer;
 }
 
@@ -135,6 +85,7 @@ span {
     font-size: 1.5rem;
     text-align: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:400px) {
