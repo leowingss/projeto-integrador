@@ -23,6 +23,14 @@ FOREIGN KEY (produto_id) REFERENCES produtos(id),
 FOREIGN KEY (categoria_id) REFERENCES categorias(id)
 );
 
+CREATE TABLE IF NOT EXISTS usuarios ( 
+id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR (150) NOT NULL,
+email VARCHAR (150) NOT NULL,
+senha VARCHAR (150) NOT NULL,
+endereco VARCHAR (150) NOT NULL
+);
+
 
 SELECT * FROM categorias_produtos;
 SELECT * FROM categorias;
