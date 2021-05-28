@@ -20,21 +20,57 @@ body {
 }
 
 .item {
-    max-width: 20%;
+    max-width: 25%;
     height: 100%;
     border-radius: 15px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 90%), 0 2px 4px rgb(0 0 0 / 90%);
-    width: 100%;
+    width: 45%;
     margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+img .legging-saia{
+    width: 80px;
+    height: 120px;
+}
+img .calça-legging{
+    width: 80px;
+    height: 120px;
 
+}
+img .conjunto{
+    width: 80px;
+    height: 120px;
+}
+img .shorts-saia{
+    width: 80px;
+    height: 120px;
+}
+img .shorts{
+    width: 80px;
+    height: 120px;
+}
+img .top{
+    width: 100px;
+    height: 80px;
+}
+img .Adidas{
+    width: 100px;
+    height: 80px;
+}
+img .Nike{
+    width: 100px;
+    height: 80px;
+}
+img .Asics{
+    width: 100px;
+    height: 80px;
+}
 .item img {
-    width: 90%;
-    height: 90%;
+    width: 180px;
+    height: 250px;
     cursor: pointer;
     border-radius: 10%;
 }
