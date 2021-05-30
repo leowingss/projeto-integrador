@@ -108,7 +108,15 @@ a.btn-login:hover{
 }
 
 .submenu{
-  background-color: turquoise;
+  background-color: rgb(221, 224, 64);
   z-index: 1;
+  list-style: none;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 100px;
+  
+
 }
   
