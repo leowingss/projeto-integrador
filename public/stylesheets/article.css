@@ -22,6 +22,8 @@ body {
 }
 
 .article-image{
+    max-width: 20%;
+    max-height: 20%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -29,7 +31,7 @@ body {
 
 .article-image img{
     max-width: 100%;
-    height: auto;
+    max-height: auto;
     border-radius: 20px 20px 0 0;
 }
 
