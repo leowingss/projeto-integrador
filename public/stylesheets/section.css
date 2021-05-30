@@ -1,3 +1,10 @@
+section *{
+    padding:0%;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 50px;
+}
+
 .h1 {
     text-align: center;
     margin-top: 100px;
@@ -17,6 +24,17 @@
 }
 
 .flex > div{
-    flex: 1 1 200px;
+    flex: 1 1 300px;
     margin: 10px;
+}
+
+.header > h1{
+   text-align: center;
+} 
+
+.flex p {
+    font-family: "Open Sans";
+    font-size: 30px;
+    background: yellow;
+    border-radius: 25px;
 }
