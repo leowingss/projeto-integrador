@@ -26,3 +26,7 @@ produto_id INT UNSIGNED NOT NULL,
 FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
 FOREIGN KEY (produto_id) REFERENCES produtos(id)
 );
+
+INSERT INTO produtos (nome,preco,image,categoria)VALUES ('Esteira',3000, '/images/esteira.png', 'Equipamentos');
+
+SELECT * FROM produtos;
