@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/slick.css" />
     <title>
-        Destaque
+        Equipamentos
     </title>
 </head>
 
@@ -30,12 +30,12 @@
 
             <section class="produtos">
                 <div class="item">
-                    <%produtos.forEach(produto =>{ %>
-                        <img src=<%=produto.image%> alt="bike">
+                    <%produtos.forEach(produtos =>{ %>
+                        <img src=<%=produtos.image%> alt="bike">
                         <p class="nome-produto">
-                            <%=produto.nome%>
+                            <%=produtos.nome%>
                         </p>
-                        <span>R$<%=produto.preco%></span>
+                        <span>R$<%=produtos.preco%></span>
                 </div>
                 <% } ) %>
 
