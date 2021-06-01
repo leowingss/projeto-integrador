@@ -27,16 +27,17 @@
 
 
             <!-- Seção de produtos -->
+           
             <section class="produtos">
                 <div class="item">
-                    <img src="/images/bike.png" alt="bike">
-                    <p class="nome-produto">Bike</p>
-                    <p class="descricao-promo">Antes R$3.199,99</p>
-                    <span>R$2.799,99</span>
-                    <a href="/products" class="btn">Comprar</a>
+                    <%produtos.forEach(produto =>{ %>
+                    <img src=<%=produto.image%> alt="bike">
+                    <p class="nome-produto"><%=produto.nome%></p>
+                    <span>R$<%=produto.preco%></span>
                 </div>
-
-
+                <% } ) %>
+                
+               
                 <!-- <div class="item">
                     <img src="/images/esteira.png" alt="esteira">
                     <p class="nome-produto">Esteira</p>

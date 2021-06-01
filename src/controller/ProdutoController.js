@@ -1,10 +1,15 @@
 const Sequelize = require('sequelize')
-const { Produto } = require("../../database/models/Produto");
+const { Produto } = require("../../database/models");
 
 const ProdutoController = {
-    destaque: (req, res) => {
-
-        return res.render("destaques");
+    destaque: async (req, res) => {
+        const produtos = await Produto.findAll({
+            where:{
+                categoria: 'Equipamentos'
+            }
+        })
+        return res.render("destaques", {produtos});
+        console.log(produtos)
     }
 }
 
