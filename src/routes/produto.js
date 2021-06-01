@@ -1,12 +1,5 @@
 const express = require('express');
 const router = express.Router();
-<<<<<<< HEAD
-const ProdutoController = require("../controller/ProdutoController")
-
-router.get("/destaque", ProdutoController.destaque);
-
-module.exports = router;
-=======
 
 
 router.get("/equipamentos", (req, res, next) => {
@@ -27,4 +20,3 @@ router.get("/acessoriosIndoor", function(req, res, next) {
 
 
 module.exports = router
->>>>>>> main
