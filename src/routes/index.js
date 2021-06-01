@@ -9,7 +9,7 @@ router.get("/index", (req, res, next) => {
     res.render("index", { title: "Home" });
 });
 
-router.get("/promocoes", controlador.promo);
+router.get("/destaques", controlador.destaque);
 
 router.get("/login", (req, res, next) => {
     res.render("login", { title: "login" });
