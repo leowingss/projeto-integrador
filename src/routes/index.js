@@ -32,6 +32,10 @@ router.get("/masculinoIndoor", function(req, res, next) {
     res.render("masculinoIndoor", { title: "Masculino Indoor" });
 });
 
+router.get("/acessoriosIndoor", function(req, res, next) {
+    res.render("acessoriosIndoor", { title: "Acessorios Indoor" });
+});
+
 router.get("/products", (req, res, next) => {
     // const { id } = req.params;
     res.render("products", { title: "Halter" });
