@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get("/destaques", (req, res, next) => {
-    res.render("destaques", { title: "Destaques" });
+router.get("/equipamentos", (req, res, next) => {
+    res.render("equipamentos", { title: "Equipamentos" });
 });
 
 router.get("/femininoIndoor", function(req, res, next) {
