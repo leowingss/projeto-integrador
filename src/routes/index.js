@@ -21,19 +21,6 @@ router.get("/indoor", (req, res, next) => {
     res.render("indoor", { title: "Sports Indoor" });
 });
 
-
-router.get("/femininoIndoor", function(req, res, next) {
-    res.render("femininoIndoor", { title: "feminino Indoor" });
-});
-
-router.get("/masculinoIndoor", function(req, res, next) {
-    res.render("masculinoIndoor", { title: "Masculino Indoor" });
-});
-
-router.get("/acessoriosIndoor", function(req, res, next) {
-    res.render("acessoriosIndoor", { title: "Acessorios Indoor" });
-});
-
 router.get("/products", (req, res, next) => {
     // const { id } = req.params;
     res.render("products", { title: "Halter" });
