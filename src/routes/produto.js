@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const ProdutoController = require('../controller/ProdutoController')
 
 
-router.get("/equipamentos", (req, res, next) => {
-    res.render("equipamentos", { title: "Equipamentos" });
-});
+router.get("/equipamentos", ProdutoController.equipamentos);
 
 router.get("/femininoIndoor", function(req, res, next) {
     res.render("femininoIndoor", { title: "feminino Indoor" });
