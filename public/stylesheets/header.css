@@ -9,7 +9,7 @@
 
 .menu-principal .redes-sociais {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -82,20 +82,6 @@
   border-bottom: solid 1px;
 }
 
-.menu .busca {
-  text-align: center;
-  width: 30%;
-}
-
-.menu .busca input {
-  background-image: url("../img/lupa.png");
-  background-repeat: no-repeat;
-  height: 36px;
-  padding: 5px;
-  width: 190px;
-  background-position: 98%;
-  border: 2px solid slategray;
-}
 a.btn-login{
   font-size: 23px;
   color: bisque;
@@ -118,5 +104,4 @@ a.btn-login:hover{
   margin-top: 100px;
   
 
-}
-  
+} 

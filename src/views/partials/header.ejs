@@ -1,9 +1,12 @@
 <link rel="stylesheet" href="/stylesheets/header.css" />
-
-<header class="menu-principal">
+<script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./searchBar.css">
+<header class="menu-principal">    
+    
     <div class="logo">
         <img src="/img/logo.png" />
     </div>
+    <%- include('./searchBar') %>
     <div class="redes-sociais">
         <ul>
             <li>
@@ -17,6 +20,7 @@
             </li>
         </ul>
     </div>
+
 </header>
 
 <div class="menu">
@@ -34,7 +38,6 @@
 
             </ul>
     </ul>
-    <div class="busca">
-        <input placeholder="Pesquisa" type="text" />
-    </div>
+   
 </div>
+
