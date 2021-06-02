@@ -10,7 +10,14 @@ const ProdutoController = {
         })
         console.log(produtos)
         return res.render("equipamentos", { produtos });
-
+    },
+    masculino: async(req, res) => {
+        const produtoMasc = await Produto.findAll({
+            where: {
+                categoria: 'Masculino'
+            }
+        })
+        return res.render("masculinoIndoor", { produtoMasc });
     }
 }
 
