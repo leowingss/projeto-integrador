@@ -29,6 +29,7 @@
             <!-- Seção de produtos -->
 
             <section class="produtos">
+
                 <div class="item">
                     <%produtos.forEach(produto =>{ %>
                         <img src=<%=produto.image%> alt=
@@ -37,6 +38,7 @@
                                 <%=produto.nome%>
                             </p>
                             <span>R$<%=produto.preco%></span>
+                            <a class="btn">Comprar</a>
                 </div>
                 <% } ) %>
 
