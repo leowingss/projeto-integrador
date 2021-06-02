@@ -8,6 +8,7 @@ const ProdutoController = {
                 categoria: 'Equipamentos'
             }
         })
+        console.log(produtos)
         return res.render("equipamentos", { produtos });
 
     }
