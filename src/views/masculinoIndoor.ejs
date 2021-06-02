@@ -22,18 +22,19 @@
             <section class="produtos">
 
                 <%produtoMasc.forEach(produto => { %>
-                    <img src=<%=produto.image %> alt=
-                    <%=produto.nome%> >
-                        <p>
-                            <%=produto.nome%>
-                        </p>
-                        <span>R$<%=produto.preco%> </span>
-                        <% })%>
-
+                    <div class="item">
+                        <img src=<%=produto.image %> alt=
+                        <%=produto.nome%> >
+                            <p>
+                                <%=produto.nome%>
+                            </p>
+                            <span>R$<%=produto.preco%> </span>
+                    </div>
+                    <% })%>
             </section>
 
             <!-- <div class="item">
-                <img src="/images/jaquetaCorridaMasc.png" alt="jaqueta-corrida-masculina">
+            <img src="/images/jaquetaCorridaMasc.png" alt="jaqueta-corrida-masculina">
                 <p>Jaqueta de Corrida Masculina</p>
                 <span>R$299,99</span>
                 <a href="/products" class="btn">Comprar</a>
