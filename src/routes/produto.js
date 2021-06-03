@@ -9,9 +9,7 @@ router.get("/femininoIndoor", ProdutoController.feminino);
 
 router.get("/masculinoIndoor", ProdutoController.masculino);
 
-router.get("/acessoriosIndoor", function(req, res, next) {
-    res.render("acessoriosIndoor", { title: "Acessorios Indoor" });
-});
+router.get("/acessoriosIndoor", ProdutoController.acessorios);
 
 
 module.exports = router

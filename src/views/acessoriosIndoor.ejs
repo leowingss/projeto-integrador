@@ -14,17 +14,21 @@
 <%- include('partials/header') %>
 
 <%- include('partials/slide') %>
-    
+
 <section class="produtos">
-    <div class="item">
-        <img class="relogio-sport" src="../images/relogio1.jpg" alt="relogio sport">
-        <p>Relogio Esportivo</p>
-        <span>R$199,99</span>
-        <a href="/products" class="btn">Comprar</a>
+    <% produtoAce.forEach(produto =>{ %>
+        <div class="item">
+            <img class="relogio-sport" src=<%=produto.image%> alt=<%=produto.nome%>>
+            <p><%=produto.nome%></p>
+            <span>R$<%=produto.preco%></span>
+            <a class="btn">Comprar</a>
+        </div>
+  <% })%>
+</section>
 
 
-    </div>
-    <div class="item">
+
+    <!-- <div class="item">
         <img class="relogio-garmin" src="../images/relogio2.jpg" alt="Relogio Garmin">
         <p>Relogio Garmin For Runner</p>
         <span>R$899,99</span>
@@ -87,9 +91,8 @@
         <a href="/products" class="btn">Comprar</a>
 
 
-    </div>
+    </div> -->
 
-</section>
 <!-- Seção de produtos -->
 
 

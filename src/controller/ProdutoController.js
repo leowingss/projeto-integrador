@@ -26,6 +26,14 @@ const ProdutoController = {
             }
         })
         return res.render('femininoIndoor', { produtoFem })
+    },
+    acessorios: async(req, res) => {
+        const produtoAce = await Produto.findAll({
+            where: {
+                categoria: 'Acessórios'
+            }
+        })
+        return res.render('acessoriosIndoor', { produtoAce })
     }
 }
 
