@@ -105,3 +105,42 @@ a.btn-login:hover{
   
 
 } 
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  height: 50px;
+  width: 250px;
+  align-self: flex-end;
+}
+
+.search form {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  border-radius: 0.3em;
+  padding: 0.3em;
+ 
+}
+
+.search form input, form button {
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  border: none;
+  padding: 0.2em;
+
+}
+
+.search form button {
+  cursor: pointer;
+  background: none;
+  color: whitesmoke;
+}
+
+.search form button:hover {
+  background-color: whitesmoke;
+  color: yellow;
+}
