@@ -80,3 +80,18 @@ INSERT INTO usuarios (id,nome,email,senha,endereco) VALUES (3,'Itamar', 'itamar@
 INSERT INTO usuarios (id,nome,email,senha,endereco) VALUES (4,'Leonardo', 'leonardo@email.com','leo123', 'Rua Desconhecida');
 
 INSERT INTO pedidos (id,data_pedido,usuario_id,produto_id) VALUES (1,"2021/06/01",1,4);
+
+
+
+-- UPDATE NAS IMAGENS
+
+UPDATE produtos SET image = '/images/shorts.jpg' WHERE id = 23;
+UPDATE produtos SET image = '/images/tenis-nike.jpg' WHERE id = 26;
+UPDATE produtos SET image = '/images/calca-leggin-com-saia.jpg' WHERE id = 19;
+UPDATE produtos SET image = '/images/tenis-adidas.jpg' WHERE id = 25;
+UPDATE produtos SET image = '/images/tenis-asics.jpg' WHERE id = 27;
+UPDATE produtos SET image = '/images/top-fitness.jpg' WHERE id = 24;
+UPDATE produtos SET image = '/images/shorts-saia.jpg' WHERE id = 22;
+UPDATE produtos SET image = '/images/calca-legging.jpg' WHERE id = 20;
+
+-- UPDATE NAS IMAGENS

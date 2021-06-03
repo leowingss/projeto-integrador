@@ -29,28 +29,23 @@
             <!-- Seção de produtos -->
 
             <section class="produtos">
-                <div class="item">
-                    <%produtos.forEach(produto =>{ %>
+
+                <%produtos.forEach(produto =>{ %>
+                    <div class="item">
                         <img src=<%=produto.image%> alt=
                         <%= produto.nome %> >
                             <p class="nome-produto">
                                 <%=produto.nome%>
                             </p>
                             <span>R$<%=produto.preco%></span>
-                </div>
-                <% } ) %>
+                            <a class="btn">Comprar</a>
+                    </div>
+                    <% } ) %>
 
             </section>
 
-            <!-- <div class="item">
-                    <img src="/images/esteira.png" alt="esteira">
-                    <p class="nome-produto">Esteira</p>
-                    <p class="descricao-promo">Antes R$4.299,99</p>
-                    <span>R$3.899,99</span>
-                    <a href="/products" class="btn">Comprar</a>
 
-
-                    <!-- Seção de produtos -->
+            <!-- Seção de produtos -->
 
 
             <!-- Footer -->
