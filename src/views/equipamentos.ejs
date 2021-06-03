@@ -30,8 +30,8 @@
 
             <section class="produtos">
 
-                <div class="item">
-                    <%produtos.forEach(produto =>{ %>
+                <%produtos.forEach(produto =>{ %>
+                    <div class="item">
                         <img src=<%=produto.image%> alt=
                         <%= produto.nome %> >
                             <p class="nome-produto">
@@ -39,8 +39,8 @@
                             </p>
                             <span>R$<%=produto.preco%></span>
                             <a class="btn">Comprar</a>
-                </div>
-                <% } ) %>
+                    </div>
+                    <% } ) %>
 
             </section>
 
