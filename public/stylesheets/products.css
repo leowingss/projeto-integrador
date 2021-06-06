@@ -82,7 +82,7 @@ h2 {
     width: 332px;
     color: #fff;
     margin: 10px;
-    margin-left: 22%;
+    margin-left: 28%;
     border: none;
 }
 
@@ -146,6 +146,11 @@ h2 {
     border-radius: 10%;
     transition: all 0.5s;
     border: yellow 5px solid;
+}
+
+.estoque {
+    background-color: rgb(5, 236, 5);
+    color: white;
 }
 
 

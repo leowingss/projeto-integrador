@@ -97,19 +97,16 @@ UPDATE produtos SET image = '/images/calca-legging.jpg' WHERE id = 20;
 -- UPDATE NAS IMAGENS
 
 
--- ADICIONANDO COLUNA DESCRIÇÃO
+-- ADICIONANDO COLUNA DESCRIÇÃO --------------------------------- 
 
 ALTER TABLE produtos ADD descricao VARCHAR(2000) NOT NULL;
 
--- ADICIONANDO COLUNA DESCRIÇÃO
+-- ADICIONANDO COLUNA DESCRIÇÃO ---------------------------------
 
 
+-- ADICIONANDO DESCRIÇÕES  
 
-
-
--- ADICIONANDO DESCRIÇÕES 
-
-UPDATE produtos SET descricao = " Aumente sua performance com a esteira de corrida. Adaptada a uma prática regular de forte intensidade, é ideal para treinar em casa próximo a uma vista bonita ou assistindo seu programa preferido." WHERE id = 1;
+UPDATE produtos SET descricao = " Decidiu sair do sedentarismo e deixar o corpo em movimento por mais tempo, mas não gosta de academias cheias ou não tem tempo? Então essa Esteira foi desenvolvida para você. Aumente sua performance com a esteira de corrida. Adaptada a uma prática regular de forte intensidade, é ideal para treinar em casa próximo a uma vista bonita ou assistindo seu programa preferido." WHERE id = 1;
 UPDATE produtos SET descricao = "Bicicleta com banco ajustável para o seu maior conforto. Além de muito divertido, praticar spinning pode trazer benefícios à sua saúde desde a primeira pedalada. Isso porque a atividade aeróbica, unida às músicas e ao ambiente descontraído, promovem diversos estímulos positivos ao organismo:
 Queima calorias: estima-se que uma hora de spinning pode mandar embora até 700 calorias;
 Melhora a saúde cardíaca: a prática constante ajuda a reduzir a pressão arterial, o colesterol e melhorar a capacidade respiratória;
