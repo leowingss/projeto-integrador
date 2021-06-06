@@ -34,6 +34,16 @@ const ProdutoController = {
             }
         })
         return res.render('acessoriosIndoor', { produtoAce })
+    },
+    showProducts: async(req, res) => {
+        const { id } = req.params
+        const itens = await Produto.findOne({
+            where: {
+                id
+            }
+
+        })
+        return res.render('products', { itens })
     }
 }
 

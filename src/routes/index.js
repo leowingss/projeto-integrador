@@ -21,10 +21,6 @@ router.get("/indoor", (req, res, next) => {
     res.render("indoor", { title: "Sports Indoor" });
 });
 
-router.get("/products", (req, res, next) => {
-    // const { id } = req.params;
-    res.render("products", { title: "Halter" });
-});
 
 router.get("/outdoor", (req, res, next) => {
     res.render("outdoor", { title: "Sports Outdoor" });
