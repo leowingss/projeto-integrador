@@ -113,3 +113,19 @@ Melhora a saúde cardíaca: a prática constante ajuda a reduzir a pressão arte
 Tonifica músculos e reduz a celulite: ajuda a trabalhar os músculos das pernas, glúteos, abdome e até dos braços, o spinning acelera a circulação, eliminando a celulite;" WHERE id = 2;
 
 -- ADICIONANDO DESCRIÇÕES 
+
+
+-- EDITANDO ARQUIVO DAS IMAGENS
+
+
+UPDATE produtos SET image = "/images/relogio1.jpg" WHERE id = 34;
+UPDATE produtos SET image = "/images/relogio2.jpg" WHERE id = 35;
+UPDATE produtos SET image = "/images/muaithai1.jpg" WHERE id = 36;
+UPDATE produtos SET image = "/images/boxeadidas.jpg" WHERE id = 37;
+UPDATE produtos SET image = "/images/muaithairosa.jpg" WHERE id = 38;
+UPDATE produtos SET image = "/images/muaithaipreto.jpg" WHERE id = 39;
+
+
+-- EDITANDO ARQUIVO DAS IMAGENS
+
+
