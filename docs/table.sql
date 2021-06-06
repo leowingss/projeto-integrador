@@ -95,3 +95,20 @@ UPDATE produtos SET image = '/images/shorts-saia.jpg' WHERE id = 22;
 UPDATE produtos SET image = '/images/calca-legging.jpg' WHERE id = 20;
 
 -- UPDATE NAS IMAGENS
+
+
+-- ADICIONANDO COLUNA DESCRIÇÃO
+
+ALTER TABLE produtos ADD descricao VARCHAR(2000) NOT NULL;
+
+-- ADICIONANDO COLUNA DESCRIÇÃO
+
+
+
+
+
+-- ADICIONANDO DESCRIÇÕES 
+
+UPDATE produtos SET descricao = " Aumente sua performance com a esteira de corrida. Adaptada a uma prática regular de forte intensidade, é ideal para treinar em casa próximo a uma vista bonita ou assistindo seu programa preferido." WHERE id = 1;
+
+-- ADICIONANDO DESCRIÇÕES 
