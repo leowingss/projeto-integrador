@@ -17,15 +17,6 @@ router.get("/cadastro", (req, res, next) => {
     res.render("cadastro", { title: "cadastro" });
 });
 
-router.get("/indoor", (req, res, next) => {
-    res.render("indoor", { title: "Sports Indoor" });
-});
-
-
-router.get("/outdoor", (req, res, next) => {
-    res.render("outdoor", { title: "Sports Outdoor" });
-});
-
 router.get("/compra", (req, res, next) => {
     res.render("compraRealizada", { title: "Compra Efetuada com Sucesso" });
 });
