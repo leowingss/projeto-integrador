@@ -19,7 +19,22 @@
 
         <!-- Imagem e Descrição -->
         <section class="box-description">
-
+            <div class="image">
+                <img src=<%=itens.image %> alt=
+                <%= itens.nome %> title=
+                    <%= itens.nome %> >
+            </div>
+            <div class="description">
+                <h2>
+                    <%= itens.nome %>
+                </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae. Quaerat, ratione veritatis. Ad, a, eaque deleniti quam aspernatur excepturi, aperiam aliquam velit est inventore similique mollitia voluptas? Molestiae, esse.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur, impedit perspiciatis et praesentium quibusdam voluptas nostrum voluptates recusandae dolorem blanditiis fuga soluta nemo veniam molestiae temporibus neque dolore
+                    repellat?
+                </p>
+                <span>R$<%= itens.preco %> </span>
+                <button type="submit">Comprar</button>
+            </div>
         </section>
 
         <!-- Imagem e Descrição -->
