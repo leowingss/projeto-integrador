@@ -5,7 +5,7 @@ const ProdutoController = require('../controller/ProdutoController')
 
 router.get("/equipamentos", ProdutoController.equipamentos);
 
-router.get("/equipamentos/:id/produtos", ProdutoController.showProducts);
+router.get("/:id/produtos", ProdutoController.showProducts);
 
 router.get("/femininoIndoor", ProdutoController.feminino);
 
