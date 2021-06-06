@@ -74,7 +74,8 @@ h2 {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.description button {
+.description a {
+    text-decoration: none;
     border-radius: 6px;
     background-color: #f1e206;
     font-size: 20px;
@@ -84,9 +85,11 @@ h2 {
     margin: 10px;
     margin-left: 28%;
     border: none;
+    font-family: Arial, Helvetica;
+    text-align: center;
 }
 
-.description button:hover {
+.description a:hover {
     cursor: pointer;
     background-color: #ffee00;
     transition: all 0.5s;

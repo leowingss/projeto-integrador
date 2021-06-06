@@ -26,6 +26,10 @@ router.get("/outdoor", (req, res, next) => {
     res.render("outdoor", { title: "Sports Outdoor" });
 });
 
+router.get("/compra", (req, res, next) => {
+    res.render("compraRealizada", { title: "Compra Efetuada com Sucesso" });
+});
+
 
 
 
