@@ -19,25 +19,7 @@
 
         <!-- Imagem e Descrição -->
         <section class="box-description">
-            <% itens.forEach(produto => { %>
-                <div class="image">
-                    <img src=<%=produto.image %> alt=
-                    <%= produto.nome %> >
-                </div>
-                <div class="description">
-                    <h2>
-                        <%= produto.nome %>
-                    </h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae. Quaerat, ratione veritatis. Ad, a, eaque deleniti quam aspernatur excepturi, aperiam aliquam velit est inventore similique mollitia voluptas? Molestiae,
-                        esse.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur, impedit perspiciatis et praesentium quibusdam voluptas nostrum voluptates recusandae dolorem blanditiis fuga soluta nemo veniam molestiae temporibus neque
-                        dolore repellat?
-                    </p>
-                    <span><%=produto.preco%></span>
-                    <button type="submit">Comprar</button>
-                </div>
-                <% }) %>
+
         </section>
 
         <!-- Imagem e Descrição -->
@@ -49,9 +31,11 @@
 
         <section class="sub-products">
             <div class="item">
-                <img src="/images/halter-5kg.jpg" alt="Halter">
-                <p>Halter 5kg</p>
-                <span>R$89,99</span>
+                <img src=<%=itens.image %> alt="Halter">
+                <p>
+                    <%= itens.nome %>
+                </p>
+                <span>R$<%= itens.preco %> </span>
                 <button type="submit">Comprar</button>
             </div>
             <div class="item">

@@ -41,8 +41,8 @@ const ProdutoController = {
             where: {
                 id
             }
-
         })
+        console.log(itens)
         return res.render('products', { itens })
     }
 }
