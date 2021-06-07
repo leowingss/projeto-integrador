@@ -137,3 +137,11 @@ UPDATE produtos SET image = "/images/muaithaipreto.jpg" WHERE id = 39;
 INSERT INTO produtos (id,nome,preco,image,categoria,descricao)VALUES (42,'Coqueteleira',15, '/images/coqueteleira.jpg', 'Acessórios', " A Coqueteleira Max Titanium é um recipiente ideal e prático para você preparar shakes e suplementos.Ela tem capacidade para te 700 ml. Ideal para seu dia a dia na musculação!");
 
 -- NOVO PRODUTO 
+
+
+-- NOVO PRODUTO
+
+UPDATE produtos SET descricao = "Prático e confortável, o Elíptico Magnético Polimet proporciona à você momentos maravilhosos de exercícios com muito conforto e segurança. O aparelho permite trabalhar a capacidade cardiorrespiratória e efetuar um treino completo, solicitando numerosos músculos do corpo.
+Os músculos que poderão ser trabalhados são coxas, glúteos, pernas e também os músculos secundários: costas, ombros, peitorais e braços. Este aparelho conta com um movimento muito suave e agradável, produzindo ao mesmo tempo em efeito queimador de calorias muito importante, graças à forte solicitação do sistema cardiovascular e o sistema respiratório. Você atingirá rapidamente os objetivos de forma e perda de peso! " WHERE id = 3;
+
+-- NOVO PRODUTO

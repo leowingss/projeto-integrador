@@ -37,13 +37,20 @@ const ProdutoController = {
     },
     showProducts: async(req, res) => {
         const { id } = req.params
-        const itens = await Produto.findOne({
+        const produto = await Produto.findOne({
             where: {
                 id
             }
         })
-        console.log(itens)
-        return res.render('products', { itens })
+        let produtosRelacionados = await Produto.findAll({
+            where: {
+                categoria: produto.categoria
+            }
+        })
+        produtosRelacionados = produtosRelacionados.sort(() => Math.random() - 0.5);
+        produtosRelacionados.length = 4
+        console.log(produto)
+        return res.render('products', { produto, produtosRelacionados })
     }
 }
 
