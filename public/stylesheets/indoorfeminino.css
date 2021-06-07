@@ -20,11 +20,11 @@ body {
 }
 
 .item {
-    max-width: 25%;
+    max-width: 20%;
     height: 100%;
     border-radius: 15px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 90%), 0 2px 4px rgb(0 0 0 / 90%);
-    width: 45%;
+    width: 100%;
     margin: 30px;
     display: flex;
     flex-direction: column;
