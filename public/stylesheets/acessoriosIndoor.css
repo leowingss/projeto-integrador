@@ -20,57 +20,66 @@ body {
 }
 
 .item {
-    max-width: 25%;
+    max-width: 20%;
     height: 100%;
     border-radius: 15px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 90%), 0 2px 4px rgb(0 0 0 / 90%);
-    width: 45%;
+    width: 100%;
     margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-img .relogio-sport{
-    width: 80px;
-    height: 120px;
-}
-img .relogio-garmin{
-    width: 80px;
-    height: 120px;
 
-}
-img .luva-boxe-everlast{
+img .relogio-sport {
     width: 80px;
     height: 120px;
 }
-img .luva-boxe-adidas{
+
+img .relogio-garmin {
     width: 80px;
     height: 120px;
 }
-img .kit-muai-thai{
+
+img .luva-boxe-everlast {
     width: 80px;
     height: 120px;
 }
-img .kit-muai-thai-preto{
+
+img .luva-boxe-adidas {
+    width: 80px;
+    height: 120px;
+}
+
+img .kit-muai-thai {
+    width: 80px;
+    height: 120px;
+}
+
+img .kit-muai-thai-preto {
     width: 100px;
     height: 80px;
 }
-img .corda{
+
+img .corda {
     width: 100px;
     height: 80px;
 }
-img .corda-elastica{
+
+img .corda-elastica {
     width: 100px;
     height: 80px;
 }
-img .apito{
+
+img .apito {
     width: 100px;
     height: 80px;
 }
+
 .item img {
-    width: 180px;
-    height: 250px;
+    width: 90%;
+    height: 90%;
     cursor: pointer;
     border-radius: 10%;
 }
