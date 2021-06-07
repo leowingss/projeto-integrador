@@ -129,3 +129,11 @@ UPDATE produtos SET image = "/images/muaithaipreto.jpg" WHERE id = 39;
 -- EDITANDO ARQUIVO DAS IMAGENS
 
 
+
+
+-- NOVO PRODUTO 
+
+
+INSERT INTO produtos (id,nome,preco,image,categoria,descricao)VALUES (42,'Coqueteleira',15, '/images/coqueteleira.jpg', 'Acessórios', " A Coqueteleira Max Titanium é um recipiente ideal e prático para você preparar shakes e suplementos.Ela tem capacidade para te 700 ml. Ideal para seu dia a dia na musculação!");
+
+-- NOVO PRODUTO 
