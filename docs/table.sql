@@ -145,3 +145,17 @@ UPDATE produtos SET descricao = "Prático e confortável, o Elíptico Magnético
 Os músculos que poderão ser trabalhados são coxas, glúteos, pernas e também os músculos secundários: costas, ombros, peitorais e braços. Este aparelho conta com um movimento muito suave e agradável, produzindo ao mesmo tempo em efeito queimador de calorias muito importante, graças à forte solicitação do sistema cardiovascular e o sistema respiratório. Você atingirá rapidamente os objetivos de forma e perda de peso! " WHERE id = 3;
 
 -- NOVO PRODUTO
+
+-- PRODUTOS MASCULINO
+UPDATE produtos SET descricao = "Aberturas Laterais Que Fornecem Um Melhor Caimento" WHERE id = 10;
+UPDATE produtos SET descricao = "A pedida certa para você que ama praticar esportes em dias com a temperatura mais baixa, essa Jaqueta com Capuz Oxer foi confeccionada em materiais leves e resistentes, que proporcionam alto conforto dentro e fora das academias. " WHERE id = 11;
+UPDATE produtos SET descricao = "É confeccionada em material macio com ótimo caimento no corpo e design clássico para maior versatilidade no dia a dia. Garanta já a sua camiseta masculina" WHERE id = 12;
+UPDATE produtos SET descricao = "Desenvolvido para a PRATICANTE DE SKI e de SNOWBOARD que procura uma blusa térmica TÉCNICA e EXTENSÍVEL que proporcione CALOR." WHERE id = 13;
+UPDATE produtos SET descricao = "Regata básica masculina, confeccionada em malha ribana de algodão. A malha proporciona um caimento perfeito" WHERE id = 14;
+UPDATE produtos SET descricao = "O Short de Corrida Run Dry conta com tecido que absorve e elimina a transpiração. Com ele você também terá maior praticidade, graças ao bolso interno para chaves. (Modelo sem cueca interna)." WHERE id = 15;
+UPDATE produtos SET descricao = "Meia Lupo Running Performance Cano Curto Dupla Camada" WHERE id = 16;
+UPDATE produtos SET descricao = "Desenvolvida para o praticante de SKI ou de SNOWBOARD que procura uma uma calça segunda pele térmica para neve quente e respirável." WHERE id = 17;
+UPDATE produtos SET descricao = "Confeccionado em material sintético com detalhes em material têxtil, garantindo maior conforto e respirabilidade, a estrutura é firme e possui perfuros para circulação de ar. A entressola em eva traz a tecnologia Evasense, EVA com dupla densidade que oferece maciez e conforto ao caminhar, e o solado em borracha frisada garante melhor aderência ao solo. Aposte na Olympikus para completar o seu look esportivo em grande estilo!" WHERE id = 18;
+UPDATE produtos SET descricao = "Calça  masculina face básica esportiva" WHERE id = 28;
+UPDATE produtos SET descricao = "Calça Térmica Segunda Pele Roupas Térmicas Frio Intenso Respirável - Masculina" WHERE id = 30;
+
