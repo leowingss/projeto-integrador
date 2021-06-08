@@ -173,3 +173,17 @@ UPDATE produtos SET descricao = "Pratique seu HIT com a JUMP ROPE e aumente sua 
 
 -- EQUIPAMENTOS NOVOS
 
+-- PRODUTOS FEMININO
+
+UPDATE produtos SET descricao = "Calça Legging Akira Fitness saia lisa tapa bumbum cintura alta feminina - Azul" WHERE id = 19;
+UPDATE produtos SET descricao = "Calça feminina modelo legging sem costura, confeccionada em poliamida" WHERE id = 20;
+UPDATE produtos SET descricao = "Conjunto Fitness Feminino Top + Short" WHERE id = 21;
+UPDATE produtos SET descricao = "Short Saia Fitness Academia Bermuda Legging Suplex, produto excelente para o dia-a-dia ou para prática de exercícios físicos. " WHERE id = 22; 
+UPDATE produtos SET descricao = "Short duplo, preto por fora e rosa por dentro, comfortavel para treinar e atividades do dia a dia." WHERE id = 23;
+UPDATE produtos SET descricao = "O top é confeccionado em malha encorpada, ideal para a prática de esportes. Com decote nadador, alças grossas e acabamento elástico." WHERE id = 24;
+UPDATE produtos SET descricao = "Tênis Adidas Runfalcon, preto com detalhes em rosa, super comfortavel e ótima durabilidade." WHERE id = 25;
+UPDATE produtos SET descricao = "Tenis Nike Epic React Flyknit Feminino oferece máximo conforto por muito mais tempo, seja durante sua corrida ou durante o seu dia-dia." WHERE id = 26;
+UPDATE produtos SET descricao = "Tênis Asics Feminino Corrida Gel Kayano." WHERE id = 27;
+UPDATE produtos SET descricao = "Calça legging feminina de corrida Run Dry." WHERE id = 31;
+UPDATE produtos SET descricao = "Top em branco com bojo, oferece o máximo comforto para treinos intensos e atividades do dia a dia." WHERE id = 32;
+UPDATE produtos SET descricao = "Camiseta Feminina Proteção Solar UV5+ Manga Longa – Cinza – Slim Fitness." WHERE id = 33;
