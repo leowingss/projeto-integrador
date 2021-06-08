@@ -159,3 +159,5 @@ UPDATE produtos SET descricao = "Confeccionado em material sintético com detalh
 UPDATE produtos SET descricao = "Calça  masculina face básica esportiva" WHERE id = 28;
 UPDATE produtos SET descricao = "Calça Térmica Segunda Pele Roupas Térmicas Frio Intenso Respirável - Masculina" WHERE id = 30;
 
+
+
