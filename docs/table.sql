@@ -161,6 +161,7 @@ UPDATE produtos SET descricao = "Calça Térmica Segunda Pele Roupas Térmicas F
 
 
 
+
 -- EQUIPAMENTOS NOVOS
 
 UPDATE produtos SET descricao = "O Halter RIG é produzido em ferro fundido, com revestimento emborrachado em PVC, altamente resistente. O produto é resistente a oxidação e pode ser facilmente higienizável, já que pode ser lavado.O produto possui formato anatômico e o revestimento protege a pele das mãos do atrito e oferece maior aderência e conforto. O acessório é ideal para treinos com o objetivo de condicionamento físico e fortalecimento muscular." WHERE id = 4;
@@ -171,3 +172,4 @@ UPDATE produtos SET descricao = "Roda para Exercícios Abdominais e Lombar Compa
 UPDATE produtos SET descricao = "Pratique seu HIT com a JUMP ROPE e aumente sua resistência para qualquer atividade física. Ideal para agilidade, aceleração do metabolismo e queima de calorias, a corda de pular JUMP ROPE é uma ótima opção de escolha para suas atividades esportivas. Além disso, a corda melhora o condicionamento físico, tonifica os músculos e aumenta a capacidade cardiorrespiratória." WHERE id = 9; 
 
 -- EQUIPAMENTOS NOVOS
+
