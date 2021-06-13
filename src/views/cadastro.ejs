@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,41 +10,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
 </head>
+
 <body>
     <%- include('partials/header') %>
-<form class="form" action="Resultado.html">
-    <div class="card">
-        <div class="cardtop">
-            <img id="avatar" src="/img/logo.png" alt="">
-            <h2 id="conta">Crie Sua Conta</h2>
-        </div>
-        <div class="endereço">
-        <div class="usericon">
-            <!-- <label for="Nome">Nome:</label> -->
-            <i class="fas fa-user-tie"></i>
-            <input class="e-s" type="text" name="Nome Completo" placeholder="Digite seu nome" required>
-        </div>
-        <br>
-        <div class="usericon">
-            <i class="fas fa-user-tie"></i>
-            <input class="e-s" type="text" name="Email" placeholder="Digite seu email" required>
-        </div>
-        <br>
-        <div class="senhaicon">
-            <i class="fas fa-lock"></i>
-            <input class="e-s" type="password" name="senha" placeholder="Digite sua senha" required>
-        </div>
-        <br>
-        <div class="senhaicon">
-            <i class="fas fa-lock"></i>
-            <input class="e-s" type="password" name="Confirmar" placeholder="Repitir a senha" required>
-        </div>
-            <br>
-              <button id="Enviar" type="submit"> Cadastrar</button>
-        </div>
-    </div>
+        <form class="form" action=/user/cadastro method="POST">
+            <div class="card">
+                <div class="cardtop">
+                    <img id="avatar" src="/img/logo.png" alt="">
+                    <h2 id="conta">Crie Sua Conta</h2>
+                </div>
+                <div class="endereço">
+                    <div class="usericon">
+                        <!-- <label for="Nome">Nome:</label> -->
+                        <i class="fas fa-user-tie"></i>
+                        <input class="e-s" type="text" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <br>
+                    <div class="usericon">
+                        <i class="fas fa-user-tie"></i>
+                        <input class="e-s" type="text" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <br>
+                    <div class="senhaicon">
+                        <i class="fas fa-lock"></i>
+                        <input class="e-s" type="password" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <br>
+                    <div class="senhaicon">
+                        <i class="fas fa-lock"></i>
+                        <input class="e-s" type="password" name="Confirmar" placeholder="Repetir a senha" required>
+                    </div>
+                    <br>
+                    <button id="Enviar" type="submit"> Cadastrar</button>
+                </div>
+            </div>
 
-</form>
+        </form>
 
 </body>
+
 </html>
