@@ -51,6 +51,16 @@ const ProdutoController = {
         produtosRelacionados.length = 4
         console.log(produto)
         return res.render('products', { produto, produtosRelacionados })
+    },
+    productPurchased: async(req, res) => {
+        const { id } = req.params
+        const produt = await Produto.findOne({
+            where: {
+                id
+            }
+        })
+
+        return res.render('compraRealizada', { produt })
     }
 }
 

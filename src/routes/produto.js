@@ -13,5 +13,11 @@ router.get("/masculinoIndoor", ProdutoController.masculino);
 
 router.get("/acessoriosIndoor", ProdutoController.acessorios);
 
+router.get("/compra", (req, res, next) => {
+    res.render("compraRealizada", { title: "Compra Efetuada com Sucesso" });
+});
+
+router.get("/:id/compra", ProdutoController.productPurchased);
+
 
 module.exports = router
