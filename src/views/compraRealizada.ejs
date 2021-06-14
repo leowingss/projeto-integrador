@@ -19,9 +19,17 @@
 
 
         <section class="container">
-            <div class="compra-efetuada">
+            <div class="image">
                 <img src="<%= produt.image %> ">
-                <h2>Compra efetuada com sucesso!</h2>
+            </div>
+            <div class="description">
+                <h2>Compra efetuada</h2>
+                <p>Você comprou o produto:
+                    <%= produt.nome %> por R$
+                        <%=produt.preco %>.</p>
+                <p>Agradecemos a sua preferência!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae magnam culpa velit, magni error, ex debitis assumenda deleniti repudiandae odio cumque consequatur incidunt. A dolores saepe corporis consequuntur sed.</p>
             </div>
         </section>
 
