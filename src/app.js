@@ -5,11 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const produtoRouter = require('./routes/produto');
-<<<<<<< HEAD
-const logMiddleware = require('../middlewares/logSite');
-=======
 const userRouter = require('./routes/users')
->>>>>>> feat/cadastro
 const app = express();
 
 // view engine setup
