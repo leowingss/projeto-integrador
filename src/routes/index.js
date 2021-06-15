@@ -13,10 +13,6 @@ router.get("/login", (req, res, next) => {
     res.render("login", { title: "login" });
 });
 
-router.get("/cadastro", (req, res, next) => {
-    res.render("cadastro", { title: "cadastro" });
-});
-
 router.get("/compra", (req, res, next) => {
     res.render("compraRealizada", { title: "Compra Efetuada com Sucesso" });
 });
