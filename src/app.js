@@ -6,6 +6,7 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const produtoRouter = require('./routes/produto');
 const userRouter = require('./routes/users')
+const logMiddleware = require('../middlewares/logSite')
 const app = express();
 
 // view engine setup
