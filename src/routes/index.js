@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const HomeController = require("../controller/HomeController")
-const validateRegister = require('../../validation/validation')
+
 
 /* GET home page. */
 router.get("/", HomeController.home);
