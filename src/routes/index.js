@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const HomeController = require("../controller/HomeController")
+const validateRegister = require('../../validation/validation')
 
 /* GET home page. */
 router.get("/", HomeController.home);
@@ -16,8 +17,6 @@ router.get("/login", (req, res, next) => {
 router.get("/cadastro", (req, res, next) => {
     res.render("cadastro", { title: "cadastro" });
 });
-
-
 
 
 
