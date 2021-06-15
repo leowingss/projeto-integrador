@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
     <link href="/stylesheets/cadastro.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Cadastro</title>
 
 </head>
 
 <body>
     <%- include('partials/header') %>
+<<<<<<< HEAD
         <form class="form" action="Resultado.html">
+=======
+        <form class="form" action=/users/cadastro method="POST">
+>>>>>>> feat/cadastro
             <div class="card">
                 <div class="cardtop">
                     <img id="avatar" src="/img/logo.png" alt="">
@@ -23,7 +27,11 @@
                     <div class="usericon">
                         <!-- <label for="Nome">Nome:</label> -->
                         <i class="fas fa-user-tie"></i>
+<<<<<<< HEAD
                         <input class="e-s" type="text" name="name" placeholder="Digite seu nome" required>
+=======
+                        <input class="e-s" type="text" name="nome" placeholder="Digite seu nome" required>
+>>>>>>> feat/cadastro
                     </div>
                     <br>
                     <div class="usericon">
@@ -33,12 +41,20 @@
                     <br>
                     <div class="senhaicon">
                         <i class="fas fa-lock"></i>
+<<<<<<< HEAD
                         <input class="e-s" type="password" name="password" placeholder="Digite sua senha" required>
+=======
+                        <input class="e-s" type="password" name="senha" placeholder="Digite sua senha" required>
+>>>>>>> feat/cadastro
                     </div>
                     <br>
                     <div class="senhaicon">
                         <i class="fas fa-lock"></i>
+<<<<<<< HEAD
                         <input class="e-s" type="password" name="Confirmar" placeholder="Repitir a senha" required>
+=======
+                        <input class="e-s" type="password" name="Confirmar" placeholder="Repetir a senha" required>
+>>>>>>> feat/cadastro
                     </div>
                     <br>
                     <button id="Enviar" type="submit"> Cadastrar</button>
