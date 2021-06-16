@@ -9,7 +9,6 @@ const validateRegister = [
     check('senha')
     .notEmpty().withMessage('A senha deve ser preenchida').bail()
     .isLength({ min: 6 }).withMessage('A senha deve ter no mínimo 6 caracteres')
-
 ]
 
 module.exports = validateRegister
