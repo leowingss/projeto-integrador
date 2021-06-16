@@ -5,6 +5,6 @@ const validateRegister = require('../../middlewares/validation')
 
 
 router.get('/cadastro', UserController.create)
-router.post('/cadastro', UserController.user)
+router.post('/cadastro', validateRegister, UserController.user)
 
 module.exports = router
