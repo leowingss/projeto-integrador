@@ -2,8 +2,7 @@ const { check } = require('express-validator')
 
 const validateRegister = [
     check('nome')
-    .notEmpty().withMessage('O nome deve ser preenchido').bail()
-    .isLength({ min: 5 }).withMessage('O nome deve ter no mínimo 5 caracteres'),
+    .notEmpty().withMessage('O nome deve ser preenchido').bail(),
     check('email')
     .notEmpty().withMessage('O email deve ser preenchido').bail()
     .isEmail().withMessage('O email deve ser válido'),

@@ -25,7 +25,7 @@
                         <i class="fas fa-user-tie"></i>
                         <input class="e-s" type="text" name="nome" placeholder="Digite seu nome" required>
                         <% if(locals.errors && errors.nome)  { %>
-                            <p>
+                            <p class="msg-erro">
                                 <%= errors.nome.msg %>
                             </p>
                             <%} %>
@@ -33,12 +33,22 @@
                     <br>
                     <div class="usericon">
                         <i class="fas fa-user-tie"></i>
-                        <input class="e-s" type="email" name="email" placeholder="Digite seu email" required>
+                        <input class="e-s" type="text" name="email" placeholder="Digite seu email" required>
+                        <% if(locals.errors && errors.email)  { %>
+                            <p class="msg-erro">
+                                <%= errors.email.msg %>
+                            </p>
+                            <%} %>
                     </div>
                     <br>
                     <div class="senhaicon">
                         <i class="fas fa-lock"></i>
                         <input class="e-s" type="password" name="senha" placeholder="Digite sua senha" required>
+                        <% if(locals.errors && errors.senha)  { %>
+                            <p class="msg-erro">
+                                <%= errors.senha.msg %>
+                            </p>
+                            <%} %>
                     </div>
                     <br>
                     <div class="senhaicon">
