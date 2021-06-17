@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const HomeController = require("../controller/HomeController")
 
+
 /* GET home page. */
 router.get("/", HomeController.home);
 
@@ -11,10 +12,6 @@ router.get("/index", (req, res, next) => {
 
 router.get("/login", (req, res, next) => {
     res.render("login", { title: "login" });
-});
-
-router.get("/cadastro", (req, res, next) => {
-    res.render("cadastro", { title: "cadastro" });
 });
 
 
