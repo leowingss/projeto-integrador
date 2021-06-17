@@ -24,6 +24,11 @@
                         <!-- <label for="Nome">Nome:</label> -->
                         <i class="fas fa-user-tie"></i>
                         <input class="e-s" type="text" name="nome" placeholder="Digite seu nome" required>
+                        <% if(locals.errors && errors.nome)  { %>
+                            <p>
+                                <%= errors.nome.msg %>
+                            </p>
+                            <%} %>
                     </div>
                     <br>
                     <div class="usericon">
@@ -44,7 +49,6 @@
                     <button id="Enviar" type="submit"> Cadastrar</button>
                 </div>
             </div>
-
         </form>
 
 </body>
