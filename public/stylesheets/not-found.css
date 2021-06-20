@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-not-found {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
