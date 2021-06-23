@@ -4,17 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
+    <title>404 Not Found</title>
     <link href="/stylesheets/not-found.css" rel="stylesheet">
 </head>
 
 <body>
-    <%- include('partials/header') %>
-        <section class="container">
-            <div class="page-not-found">
-                <h2>PAGE NOT FOUND</h2>
-            </div>
-        </section>
+    <header class="menu-error">
+        <div class="logo-error">
+            <img src="/img/logo.png" />
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="page-not-found">
+            <h2>Página não encontrada</h2>
+            <p>Desculpe o transtorno, tente pesquisar algo diferente!</p>
+            <a class="btn" href="/index">Voltar para o início</a>
+        </div>
+    </section>
 </body>
 
 </html>

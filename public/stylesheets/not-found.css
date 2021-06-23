@@ -9,9 +9,40 @@
     justify-content: center;
 }
 
+h2 {
+    color: yellow;
+    font-size: 2rem;
+}
+
 .page-not-found {
+    font: normal 12pt Arial;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 400px;
-    border: 2px solid black;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.logo-error {
+    width: 100%;
+    background-color: black;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    background-color: #ffff00;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    box-shadow: 0 5px #b6b604;
+    padding: 10px;
 }
