@@ -5,7 +5,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const produtoRouter = require('./routes/produto');
-const logMiddleware = require('../middlewares/logSite');
+const userRouter = require('./routes/users')
+const logMiddleware = require('./middlewares/logSite')
 const app = express();
 
 // view engine setup
@@ -20,6 +21,12 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(logMiddleware)
 app.use('/', indexRouter);
 app.use('/produto', produtoRouter);
+app.use('/users', userRouter)
+
+app.use((req, res) => {
+    return res.status(404).render('not-found')
+})
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
