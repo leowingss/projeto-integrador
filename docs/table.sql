@@ -203,3 +203,52 @@ UPDATE produtos SET descricao = "Elásticos feitos de borracha profissional lát
 UPDATE produtos SET descricao = "O apito é feito de plástico de boa qualidade e é apropriado para árbitros, treinadores, treinamento, instrutores, esportes, professores, salva-vidas, auto-defesa, sobrevivência, emergência, pastoreio, treinamento de pássaros, treinamento de cães, etc." WHERE id = 41;
 
 
+
+
+-- COLUNA QUANTIDADES
+
+ALTER TABLE produtos ADD quantidade tinyint;
+
+UPDATE produtos SET quantidade = 19 WHERE id = 1;
+UPDATE produtos SET quantidade = 40 WHERE id = 2;
+UPDATE produtos SET quantidade = 32 WHERE id = 3;
+UPDATE produtos SET quantidade = 120 WHERE id = 4;
+UPDATE produtos SET quantidade = 129 WHERE id = 5;
+UPDATE produtos SET quantidade = 219 WHERE id = 6;
+UPDATE produtos SET quantidade = 100 WHERE id = 7;
+UPDATE produtos SET quantidade = 50 WHERE id = 8;
+UPDATE produtos SET quantidade = 79 WHERE id = 9;
+UPDATE produtos SET quantidade = 30 WHERE id = 10;
+UPDATE produtos SET quantidade = 99 WHERE id = 11;
+UPDATE produtos SET quantidade = 34 WHERE id = 12;
+UPDATE produtos SET quantidade = 97 WHERE id = 13;
+UPDATE produtos SET quantidade = 84 WHERE id = 14;
+UPDATE produtos SET quantidade = 55 WHERE id = 15;
+UPDATE produtos SET quantidade = 63 WHERE id = 16;
+UPDATE produtos SET quantidade = 10 WHERE id = 17;
+UPDATE produtos SET quantidade = 22 WHERE id = 18;
+UPDATE produtos SET quantidade = 41 WHERE id = 19;
+UPDATE produtos SET quantidade = 21 WHERE id = 20;
+UPDATE produtos SET quantidade = 19 WHERE id = 21;
+UPDATE produtos SET quantidade = 0 WHERE id = 22;
+UPDATE produtos SET quantidade = 1 WHERE id = 23;
+UPDATE produtos SET quantidade = 22 WHERE id = 24;
+UPDATE produtos SET quantidade = 90 WHERE id = 25;
+UPDATE produtos SET quantidade = 0 WHERE id = 26;
+UPDATE produtos SET quantidade = 9 WHERE id = 27;
+UPDATE produtos SET quantidade = 0 WHERE id = 28;
+UPDATE produtos SET quantidade = 12 WHERE id = 29;
+UPDATE produtos SET quantidade = 90 WHERE id = 30;
+UPDATE produtos SET quantidade = 0 WHERE id = 31;
+UPDATE produtos SET quantidade = 29 WHERE id = 32;
+UPDATE produtos SET quantidade = 12 WHERE id = 33;
+UPDATE produtos SET quantidade = 100 WHERE id = 34;
+UPDATE produtos SET quantidade = 120 WHERE id = 35;
+UPDATE produtos SET quantidade = 99 WHERE id = 36;
+UPDATE produtos SET quantidade = 0 WHERE id = 37;
+UPDATE produtos SET quantidade = 119 WHERE id = 38;
+UPDATE produtos SET quantidade = 86 WHERE id = 39;
+UPDATE produtos SET quantidade = 90 WHERE id = 40;
+UPDATE produtos SET quantidade = 23 WHERE id = 41;
+UPDATE produtos SET quantidade = 4 WHERE id = 42;
+
