@@ -31,7 +31,9 @@
                 <p>
                     <%= produto.descricao %>
                 </p>
-                <span class="estoque">Em estoque</span>
+                <p class="<%=estoque%> "> Em estoque: A quantidade é
+                    <%= produto.quantidade %>
+                </p>
                 <span>R$<%= produto.preco %> </span>
                 <a href="/produto/<%= produto.id %>/compra">Comprar</a>
             </div>
@@ -41,6 +43,7 @@
 
         <hr>
         <h2>Veja também</h2>
+
 
         <!-- Veja outros produtos semelhantes -->
 

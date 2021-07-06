@@ -6,7 +6,6 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const produtoRouter = require('./routes/produto');
 const userRouter = require('./routes/users')
-const logMiddleware = require('./middlewares/logSite')
 const app = express();
 
 // view engine setup
@@ -18,7 +17,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(logMiddleware)
 app.use('/', indexRouter);
 app.use('/produto', produtoRouter);
 app.use('/users', userRouter)

@@ -50,7 +50,11 @@ const ProdutoController = {
         produtosRelacionados = produtosRelacionados.sort(() => Math.random() - 0.5);
         produtosRelacionados.length = 4
         console.log(produto)
-        return res.render('products', { produto, produtosRelacionados })
+
+
+        const estoque = (produto.quantidade == 0) ? 'estoqueFalse' : 'estoqueTrue'
+
+        return res.render('products', { produto, produtosRelacionados, estoque })
     },
     productPurchased: async(req, res) => {
         const { id } = req.params
