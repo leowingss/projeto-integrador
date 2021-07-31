@@ -1,4 +1,4 @@
-* {
+git* {
     box-sizing: border-box;
 }
 
@@ -168,7 +168,6 @@ h2 {
     box-shadow: 0 0 3px 0 black;
     color: black;
 }
-
 
 /* 
 @media screnn and (max-width:400px) {
