@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
     background-color: rgb(241, 230, 216);
     margin: 0px 0px 0px 0px;
@@ -87,4 +88,38 @@ button:hover {
 
 .msg-erro {
     color: goldenrod;
+}
+
+@media (max-width: 400px) {
+
+    
+    #avatar{
+        width: 400px;
+    }
+    #conta{
+        font-size: 40px;
+    }
+    .card{
+        width: 800px;
+        height: 800px;
+        margin: 100px 0 0 50px;
+    }
+    .fas{
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .e-s{
+        height: 70px;
+        width: 540px;
+        padding-left: 60px;
+        font-size: 30px;
+    }
+    button{
+        height: 70px;
+        width: 600px;
+    }
+    #Enviar{
+        font-size: 30px;
+
+    }
 }
