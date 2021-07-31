@@ -114,12 +114,10 @@ body {
         padding-left: 60px;
         font-size: 30px;
     }
-    button{
-        height: 70px;
-        width: 600px;
-    }
     #Enviar{
         font-size: 30px;
+        height: 70px;
+        width: 600px;
 
     }
 }

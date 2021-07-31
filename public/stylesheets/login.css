@@ -42,11 +42,9 @@ body{
     padding-left: 30px;
     border: 0px;
 }
-
 h2{
     color: goldenrod;
 }
-
 #Enviar{
 background-color:rgb(255, 240, 30);
 width: 100%;
@@ -57,17 +55,14 @@ margin:25px 5px;
 font-size:large;
 opacity: 0.8;
 border: 0px;
-
 }
 #Enviar:hover{
     background-color: rgb(238, 215, 12);
     cursor: pointer;
-
 }
 .Lembreme{
     margin-top:20px;
     color: rgb(238, 215, 12);
-
 }
 .enviar-container{
     display: flex;
@@ -117,7 +112,7 @@ border: 0px;
         padding-left: 60px;
         font-size: 30px;
     }
-    button{
+    #Enviar{
         height: 70px;
         width: 600px;
     }
