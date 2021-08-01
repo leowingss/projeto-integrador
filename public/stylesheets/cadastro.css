@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: rgb(241, 230, 216);
     margin: 0px 0px 0px 0px;
@@ -9,7 +13,7 @@ body {
 .form {
     width: 400px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .card {
@@ -20,8 +24,8 @@ body {
     background-color: rgb(10, 10, 10);
     padding: 40px 10px 30px 10px;
     border-radius: 10px;
-    height: 500px;
-    width: 400px;
+    height: 70%;
+    width: 90%;
     margin-bottom: 40px;
 }
 
@@ -90,34 +94,34 @@ body {
     color: goldenrod;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     
     #avatar{
-        width: 400px;
+        width: 50%;
     }
-    #conta{
-        font-size: 40px;
+    h2{
+        font-size:25px;
+        margin-bottom: 10px;
     }
     .card{
-        width: 800px;
-        height: 800px;
-        margin: 100px 0 0 50px;
+        width: 80%;
+        height: 80%;
+        margin-left: 7%;
+        text-align: center;
     }
     .fas{
-        font-size: 40px;
-        margin-top: 5px;
+        font-size: 15px;
+        padding-left: 5px;
     }
     .e-s{
-        height: 70px;
-        width: 540px;
-        padding-left: 60px;
-        font-size: 30px;
+        width: 80%;
+        font-size: 15px;
     }
     #Enviar{
-        font-size: 30px;
-        height: 70px;
-        width: 600px;
-
+        width: 80%;
+    }
+    .checkbox{
+        margin-right:15px;
     }
 }

@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
 body{
     background-color:rgb(241, 230, 216);
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     font-family: 'Lato', sans-serif;
  }
-.form{
+
+ .Form{
     width: 400px;
     margin:auto;
     padding-top:40px;
@@ -44,6 +49,7 @@ body{
 }
 h2{
     color: goldenrod;
+    margin-bottom: 10px;
 }
 #Enviar{
 background-color:rgb(255, 240, 30);
@@ -84,46 +90,33 @@ border: 0px;
 .cadastro{
     color: rgb(238, 215, 12);
     text-decoration: none;
+    
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     
     #avatar{
-        width: 400px;
+        width: 50%;
     }
     h2{
-        font-size:40px;
-    }
-    #conta{
-        font-size: 40px;
+        font-size:25px;
     }
     .card{
-        width: 800px;
-        height: 800px;
-        margin: 100px 0 0 50px;
+        width: 80%;
+        height: 70%;
+        margin-left: 4%;
     }
     .fas{
-        font-size: 40px;
-        margin-top: 5px;
+        font-size: 15px;
     }
     .e-s{
-        height: 70px;
-        width: 540px;
-        padding-left: 60px;
-        font-size: 30px;
+        width: 80%;
+        font-size: 15px;
     }
     #Enviar{
-        height: 70px;
-        width: 600px;
-    }
-    .Lembreme,
-    #Enviar,
-    .cadastro{
-        font-size: 30px;
+        width: 80%;
     }
     .checkbox{
-        margin-right:25px;
-        /* padding-bottom: 5px; */
-        transform: scale(2);
+        margin: 0 10px 0 8px;
     }
 }

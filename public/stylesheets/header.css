@@ -113,7 +113,7 @@ a.btn-login:hover{
   padding: 1em;
   height: 50px;
   width: 250px;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .search form {
@@ -143,4 +143,34 @@ a.btn-login:hover{
 .search form button:hover {
   background-color: whitesmoke;
   color: yellow;
+}
+
+@media (max-width: 600px) {
+
+  .redes-sociais{
+      background-color: black;
+    }
+  .menu-principal .redes-sociais {
+    justify-content: center;
+    margin-top: 10px;
+    }
+    a.btn-login{
+      margin-bottom: 35px;
+    }
+    .search form{
+      border: none;
+    }
+    .search{
+      padding: 0px;
+    }
+    img.media-object {
+      width: 40px;
+      margin-bottom: 20px ;
+    }
+    .fas{
+      font-size: 20px;
+    }
+    .menu-principal{
+      flex-direction: column;
+    }
 }
