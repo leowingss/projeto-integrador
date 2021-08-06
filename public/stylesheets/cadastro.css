@@ -34,7 +34,7 @@ body {
     width: 250px;
     border-radius: 60px;
     box-shadow: 5px 10px 10px rgb(180, 180, 8);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .cardtop {
@@ -43,6 +43,7 @@ body {
 
 #conta {
     color: goldenrod;
+    margin-bottom: 15px;
 }
 
 .e-s {
