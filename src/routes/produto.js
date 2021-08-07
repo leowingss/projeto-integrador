@@ -16,6 +16,8 @@ router.get('/compra', (req, res, next) => {
   res.render('compraRealizada', { title: 'Compra Efetuada com Sucesso' })
 })
 
+router.get('/search', ProdutoController.searchProducts)
+
 router.get('/:id/compra', ProdutoController.productPurchased)
 
 module.exports = router

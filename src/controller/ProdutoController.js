@@ -62,6 +62,27 @@ const ProdutoController = {
     return res.render('products', { produto, produtosRelacionados, estoque })
   },
 
+  searchProducts: async (req, res) => {
+    const products = await Produto.findAll({
+      where: {
+        [Sequelize.Op.or]: [
+          {
+            nome: {
+              [Sequelize.Op.like]: `%${req.query.term}%`
+            }
+          },
+          {
+            descricao: {
+              [Sequelize.Op.like]: `%${req.query.term}%`
+            }
+          }
+        ]
+      }
+    })
+
+    res.json(products)
+  },
+
   productPurchased: async (req, res) => {
     const { id } = req.params
     const produt = await Produto.findOne({
