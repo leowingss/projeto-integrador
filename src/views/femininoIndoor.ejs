@@ -18,7 +18,7 @@
         <%- include('partials/slide') %>
 
             <section class="produtos">
-                <% produtoFem.forEach(produto => { %>
+                <% produtoFem.forEach(produto=> { %>
                     <div class="item">
                         <img class="leggin-saia" src=<%=produto.image%> alt=
                         <%= produto.nome %>>
@@ -28,7 +28,7 @@
                             <span>R$<%= produto.preco %> </span>
                             <a href="/produto/<%=produto.id%>/produtos" class="btn">Comprar</a>
                     </div>
-                    <% })  %>
+                    <% }) %>
             </section>
 
 

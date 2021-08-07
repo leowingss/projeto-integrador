@@ -10,17 +10,17 @@ image VARCHAR(500),
 categoria VARCHAR(150)
 );
 
-CREATE TABLE IF NOT EXISTS usuarios ( 
+CREATE TABLE IF NOT EXISTS usuarios (
 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR (150) NOT NULL,
 email VARCHAR (150) NOT NULL,
 senha VARCHAR (150) NOT NULL,
-endereco VARCHAR (150) NOT NULL
+endereco VARCHAR (150)
 );
 
-CREATE TABLE IF NOT EXISTS pedidos( 
+CREATE TABLE IF NOT EXISTS pedidos(
 id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-data_pedido DATE, 
+data_pedido DATE,
 usuario_id INT UNSIGNED NOT NULL,
 produto_id INT UNSIGNED NOT NULL,
 FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
@@ -97,14 +97,14 @@ UPDATE produtos SET image = '/images/calca-legging.jpg' WHERE id = 20;
 -- UPDATE NAS IMAGENS
 
 
--- ADICIONANDO COLUNA DESCRIÇÃO --------------------------------- 
+-- ADICIONANDO COLUNA DESCRIÇÃO ---------------------------------
 
 ALTER TABLE produtos ADD descricao VARCHAR(2000) NOT NULL;
 
 -- ADICIONANDO COLUNA DESCRIÇÃO ---------------------------------
 
 
--- ADICIONANDO DESCRIÇÕES  
+-- ADICIONANDO DESCRIÇÕES
 
 UPDATE produtos SET descricao = " Decidiu sair do sedentarismo e deixar o corpo em movimento por mais tempo, mas não gosta de academias cheias ou não tem tempo? Então essa Esteira foi desenvolvida para você. Aumente sua performance com a esteira de corrida. Adaptada a uma prática regular de forte intensidade, é ideal para treinar em casa próximo a uma vista bonita ou assistindo seu programa preferido." WHERE id = 1;
 UPDATE produtos SET descricao = "Bicicleta com banco ajustável para o seu maior conforto. Além de muito divertido, praticar spinning pode trazer benefícios à sua saúde desde a primeira pedalada. Isso porque a atividade aeróbica, unida às músicas e ao ambiente descontraído, promovem diversos estímulos positivos ao organismo:
@@ -112,7 +112,7 @@ Queima calorias: estima-se que uma hora de spinning pode mandar embora até 700 
 Melhora a saúde cardíaca: a prática constante ajuda a reduzir a pressão arterial, o colesterol e melhorar a capacidade respiratória;
 Tonifica músculos e reduz a celulite: ajuda a trabalhar os músculos das pernas, glúteos, abdome e até dos braços, o spinning acelera a circulação, eliminando a celulite;" WHERE id = 2;
 
--- ADICIONANDO DESCRIÇÕES 
+-- ADICIONANDO DESCRIÇÕES
 
 
 -- EDITANDO ARQUIVO DAS IMAGENS
@@ -131,12 +131,12 @@ UPDATE produtos SET image = "/images/muaithaipreto.jpg" WHERE id = 39;
 
 
 
--- NOVO PRODUTO 
+-- NOVO PRODUTO
 
 
 INSERT INTO produtos (id,nome,preco,image,categoria,descricao)VALUES (42,'Coqueteleira',15, '/images/coqueteleira.jpg', 'Acessórios', " A Coqueteleira Max Titanium é um recipiente ideal e prático para você preparar shakes e suplementos.Ela tem capacidade para te 700 ml. Ideal para seu dia a dia na musculação!");
 
--- NOVO PRODUTO 
+-- NOVO PRODUTO
 
 
 -- NOVO PRODUTO
@@ -165,11 +165,11 @@ UPDATE produtos SET descricao = "Calça Térmica Segunda Pele Roupas Térmicas F
 -- EQUIPAMENTOS NOVOS
 
 UPDATE produtos SET descricao = "O Halter RIG é produzido em ferro fundido, com revestimento emborrachado em PVC, altamente resistente. O produto é resistente a oxidação e pode ser facilmente higienizável, já que pode ser lavado.O produto possui formato anatômico e o revestimento protege a pele das mãos do atrito e oferece maior aderência e conforto. O acessório é ideal para treinos com o objetivo de condicionamento físico e fortalecimento muscular." WHERE id = 4;
-UPDATE produtos SET descricao = "É um produto leve, feito no tamanho ideal para os exercícios feitos em pé ou sentado e pode ser transportado para qualquer local.O colchonete para ginástica é fabricado com espuma exclusiva que foi desenvolvida com a densidade adequada para diversas práticas esportivas como abdominais, flexões, yoga, exercícios para glúteos e outros. O colchonete para ginastica é ideal para uso em academias, clinicas, apartamentos, casas e até locais externos como parques. " WHERE id = 5; 
-UPDATE produtos SET descricao = "A Bola de Ginástica 65cm é um item ideal para você que gosta de praticar exercícios físicos, seja em casa ou academias. Ela proporciona um treino prático e rápido e muito eficiente.A Bola de Ginastica Suíça é feita para desenvolver toda a musculatura do corpo. Elá é fabricada com materiais de qualidade, suporta até 150 kg, e é ideal para você aproveitar todos os seus exercícios e atividades. Aproveite a oportunidade e compre a sua hoje mesmo!" WHERE id = 6; 
-UPDATE produtos SET descricao = "Quando o assunto é se exercitar, o primeiro pensamento que vem à mente e treinar em uma academia, não é mesmo? Mas você sabia que é possível manter a forma de muitas outras maneiras, como, por exemplo, treinar em casa? Para ajudar você nessa missão, a MDI traz a Cama Elástica Trampolim Mini Jump Profissional. Para tonificar a musculatura dos membros e melhorar seu condicionamento físico." WHERE id = 7; 
-UPDATE produtos SET descricao = "Roda para Exercícios Abdominais e Lombar Compacto e muito fácil de utilizar, a Roda de Exercícios é um potente aparelho que ajuda a construir músculos bem definidos. Ao direcionar a roda para frente, diversos músculos se contraem, favorecendo a tonificação. O principal deles é o abdômen, após algumas semanas percebe-se a diferença, depois, a lombar e músculos estabilizadores da coluna. A pegada anatômica e as rodas largas tornam o produto extremamente confortável e eficiente na construção de um corpo saudável e forte." WHERE id = 8; 
-UPDATE produtos SET descricao = "Pratique seu HIT com a JUMP ROPE e aumente sua resistência para qualquer atividade física. Ideal para agilidade, aceleração do metabolismo e queima de calorias, a corda de pular JUMP ROPE é uma ótima opção de escolha para suas atividades esportivas. Além disso, a corda melhora o condicionamento físico, tonifica os músculos e aumenta a capacidade cardiorrespiratória." WHERE id = 9; 
+UPDATE produtos SET descricao = "É um produto leve, feito no tamanho ideal para os exercícios feitos em pé ou sentado e pode ser transportado para qualquer local.O colchonete para ginástica é fabricado com espuma exclusiva que foi desenvolvida com a densidade adequada para diversas práticas esportivas como abdominais, flexões, yoga, exercícios para glúteos e outros. O colchonete para ginastica é ideal para uso em academias, clinicas, apartamentos, casas e até locais externos como parques. " WHERE id = 5;
+UPDATE produtos SET descricao = "A Bola de Ginástica 65cm é um item ideal para você que gosta de praticar exercícios físicos, seja em casa ou academias. Ela proporciona um treino prático e rápido e muito eficiente.A Bola de Ginastica Suíça é feita para desenvolver toda a musculatura do corpo. Elá é fabricada com materiais de qualidade, suporta até 150 kg, e é ideal para você aproveitar todos os seus exercícios e atividades. Aproveite a oportunidade e compre a sua hoje mesmo!" WHERE id = 6;
+UPDATE produtos SET descricao = "Quando o assunto é se exercitar, o primeiro pensamento que vem à mente e treinar em uma academia, não é mesmo? Mas você sabia que é possível manter a forma de muitas outras maneiras, como, por exemplo, treinar em casa? Para ajudar você nessa missão, a MDI traz a Cama Elástica Trampolim Mini Jump Profissional. Para tonificar a musculatura dos membros e melhorar seu condicionamento físico." WHERE id = 7;
+UPDATE produtos SET descricao = "Roda para Exercícios Abdominais e Lombar Compacto e muito fácil de utilizar, a Roda de Exercícios é um potente aparelho que ajuda a construir músculos bem definidos. Ao direcionar a roda para frente, diversos músculos se contraem, favorecendo a tonificação. O principal deles é o abdômen, após algumas semanas percebe-se a diferença, depois, a lombar e músculos estabilizadores da coluna. A pegada anatômica e as rodas largas tornam o produto extremamente confortável e eficiente na construção de um corpo saudável e forte." WHERE id = 8;
+UPDATE produtos SET descricao = "Pratique seu HIT com a JUMP ROPE e aumente sua resistência para qualquer atividade física. Ideal para agilidade, aceleração do metabolismo e queima de calorias, a corda de pular JUMP ROPE é uma ótima opção de escolha para suas atividades esportivas. Além disso, a corda melhora o condicionamento físico, tonifica os músculos e aumenta a capacidade cardiorrespiratória." WHERE id = 9;
 
 -- EQUIPAMENTOS NOVOS
 
@@ -178,7 +178,7 @@ UPDATE produtos SET descricao = "Pratique seu HIT com a JUMP ROPE e aumente sua 
 UPDATE produtos SET descricao = "Calça Legging Akira Fitness saia lisa tapa bumbum cintura alta feminina - Azul" WHERE id = 19;
 UPDATE produtos SET descricao = "Calça feminina modelo legging sem costura, confeccionada em poliamida" WHERE id = 20;
 UPDATE produtos SET descricao = "Conjunto Fitness Feminino Top + Short" WHERE id = 21;
-UPDATE produtos SET descricao = "Short Saia Fitness Academia Bermuda Legging Suplex, produto excelente para o dia-a-dia ou para prática de exercícios físicos. " WHERE id = 22; 
+UPDATE produtos SET descricao = "Short Saia Fitness Academia Bermuda Legging Suplex, produto excelente para o dia-a-dia ou para prática de exercícios físicos. " WHERE id = 22;
 UPDATE produtos SET descricao = "Short duplo, preto por fora e rosa por dentro, comfortavel para treinar e atividades do dia a dia." WHERE id = 23;
 UPDATE produtos SET descricao = "O top é confeccionado em malha encorpada, ideal para a prática de esportes. Com decote nadador, alças grossas e acabamento elástico." WHERE id = 24;
 UPDATE produtos SET descricao = "Tênis Adidas Runfalcon, preto com detalhes em rosa, super comfortavel e ótima durabilidade." WHERE id = 25;
@@ -193,7 +193,7 @@ UPDATE produtos SET descricao = "Camiseta Feminina Proteção Solar UV5+ Manga L
 UPDATE produtos SET descricao = "A Mi Smart Band 4 representa um salto evolutivo da sua antecessora. É muito intuitiva e útil para fazer o controle de todos os tipos de exercícios, além de que lhe permite visualizar notificações e chamadas que entram no seu telefone celular e controlar a reprodução da música. Duas características importantes de esta pulseira inteligente são sua tela sensível ao toque AMOLED colorida, que oferece mais brilho, é 39,9% maior que a Mi Band 3 e a autonomia da sua bateria." WHERE id = 34;
 UPDATE produtos SET descricao = "O Garmin Forerunner é o primeiro relógio GPS multisport para os atletas que querem ter acesso a dados avançados e o máximo rendimento sem prescindir da comodidade. É compatível com os pulsómetros Run, Tri e Swim para obter dados avançados de ritmo cardíaco em cada desporto e dados dinâmicos de corrida e ciclismo completos para uma análise detalhada do rendimento." WHERE id = 35;
 UPDATE produtos SET descricao = "É confeccionada em courino de alta qualidade (PU) e possui tecnologia do tratamento antimicrobiano, que evita odores e mantem cheiro agradável, tecnologia chamada EVERFRESH. Composta por tecidos leves e ventiláveis, tecnologia chamada EVERCOOL, que proporcionam uma temperatura ideal e seu ajuste é seguro que garantindo proteção avançada. Este equipamento pode ser usado tanto para treino quanto para luta o uso dele evita lesões no punho." WHERE id = 36;
-UPDATE produtos SET descricao = "A Luva Adidas Power 100 é produzida com tecnologia e materiais de altíssima qualidade, sendo ideais para competições e treinos. Uso indicado para boxe, muay thai e Kickboxing. Confeccionada em couro sintético de alto desempenho; Espuma injetada IMF que garante melhor distribuição do impact por toda a luva. Desenvolvida para melhorar e personificar os golpes do lutador, com sistema de fechamento com velcro para melhor ajuste e maior proteção contra lesões no punho." WHERE id = 37; 
+UPDATE produtos SET descricao = "A Luva Adidas Power 100 é produzida com tecnologia e materiais de altíssima qualidade, sendo ideais para competições e treinos. Uso indicado para boxe, muay thai e Kickboxing. Confeccionada em couro sintético de alto desempenho; Espuma injetada IMF que garante melhor distribuição do impact por toda a luva. Desenvolvida para melhorar e personificar os golpes do lutador, com sistema de fechamento com velcro para melhor ajuste e maior proteção contra lesões no punho." WHERE id = 37;
 UPDATE produtos SET descricao = "01 Par de Luvas - Confeccionadas em material sintético de alta qualidade, oferece durabilidade e segurança para absorver os impactos durante treinos e combates.
 01 Par de Caneleiras – Com design repaginado e estrutura mais anatômica, as caneleiras contam com uma dupla camada de absorção, sendo 01 cm de EVA e 01 cm de espuma de alta densidade, garantindo maior robustez e resistência em seu preenchimento interno, conferindo um melhor ajuste à perna e maior absorção de impactos em seu treino. Possui sua parte externa revestida por um tecido especialmente desenvolvido para equipamentos de artes marciais, o que confere maior resistência e durabilidade ao produto.
 01 Par de Bandagens - Garantem maior proteção e conforto para o punho durante os treinos e maior ajuste às luvas, possui fechamento em velcro. Tamanho: 3 metros.
