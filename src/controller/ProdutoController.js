@@ -41,7 +41,7 @@ const ProdutoController = {
 
   showProducts: async (req, res) => {
     const { id } = req.params
-    const produto = await Produto.findOne({
+    let produto = await Produto.findOne({
       where: {
         id
       }
@@ -56,6 +56,8 @@ const ProdutoController = {
     console.log(produto)
 
     const estoque = produto.quantidade == 0 ? 'estoqueFalse' : 'estoqueTrue'
+
+    produto = res.locals.cart.get(id) || produto
 
     return res.render('products', { produto, produtosRelacionados, estoque })
   },

@@ -34,8 +34,19 @@
                 <p class="<%=estoque%> "> Estoque: A quantidade é
                     <%= produto.quantidade %>
                 </p>
-                <span>R$<%= produto.preco %> </span>
-                <a href="/produto/<%= produto.id %>/compra">Comprar</a>
+
+                <% if (produto.quantidadeNoCarrinho) { %>
+                    <span>Quantidade no carrinho: <%= produto.quantidadeNoCarrinho %> </span>
+                    <% } %>
+
+                        <span>R$<%= produto.preco %> </span>
+                        <a href="/carrinho/<%= produto.id %>/add">Adicionar ao carrinho</a>
+
+                        <% if (produto.quantidadeNoCarrinho) { %>
+                            <a href="/carrinho/<%= produto.id %>/remove">Remover do carrinho</a>
+                            <% } %>
+
+                                <!-- <a href="/produto/<%= produto.id %>/compra">Comprar</a> -->
             </div>
         </section>
 

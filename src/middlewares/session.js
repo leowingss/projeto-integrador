@@ -1,4 +1,5 @@
 const session = require('express-session')
+const Cart = require('../services/Cart')
 
 const startSession = req => user => {
   req.session.user = {
@@ -16,6 +17,10 @@ const destroySession = req => () => {
 const validateSession = (req, res, next) => {
   res.locals.isLogged = req.session && !!req.session.user
   res.locals.user = req.session && req.session.user
+
+  res.locals.items = (req.session && req.session.items) || []
+
+  res.locals.cart = new Cart(res.locals.items)
 
   req.startSession = startSession(req)
   req.destroySession = destroySession(req)
