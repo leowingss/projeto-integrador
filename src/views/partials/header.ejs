@@ -9,17 +9,15 @@
         <div class="redes-sociais">
             <ul>
                 <li>
-                    <a href="//www.whatsapp.com/"><img src="/img/whats.png"
-                            class="media-object  img-responsive img-thumbnail"></a>
+                    <a href="//www.whatsapp.com/"><img src="/img/whats.png" class="media-object  img-responsive img-thumbnail"></a>
                 </li>
                 <li>
-                    <a href="//www.facebook.com/"><img src="/img/face.png"
-                            class="media-object  img-responsive img-thumbnail"></a>
+                    <a href="//www.facebook.com/"><img src="/img/face.png" class="media-object  img-responsive img-thumbnail"></a>
                 </li>
 
                 <% if (locals.isLogged) { %>
                     <li>
-                        <span>Olá <%= locals.user.nome %>! </span>
+                        <span class="ola-usuario">Olá <%= locals.user.nome %>! </span>
                     </li>
                     <li>
                         <a href="/logout" class="btn-login">Logout</a>

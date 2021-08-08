@@ -81,7 +81,7 @@ h2 {
     font-size: 20px;
     line-height: 48px;
     width: 332px;
-    color: #fff;
+    color: #000000;
     margin: 10px;
     border: none;
     font-family: Arial, Helvetica;
@@ -168,6 +168,11 @@ h2 {
     box-shadow: 0 0 3px 0 black;
     color: black;
 }
+
+.color-carrinho {
+    color: black;
+}
+
 
 /* 
 @media screnn and (max-width:400px) {
