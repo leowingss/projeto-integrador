@@ -10,6 +10,11 @@ router.get('/index', (req, res, next) => {
   res.render('index', { title: 'Home' })
 })
 
+
+router.get('/carrinho', (req, res, next) => {
+  res.render('carrinho')
+})
+
 router.get('/login', UserController.pageLogin)
 router.get('/logout', UserController.doLogout)
 router.post('/login', UserController.doLogin)

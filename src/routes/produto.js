@@ -12,10 +12,6 @@ router.get('/masculinoIndoor', ProdutoController.masculino)
 
 router.get('/acessoriosIndoor', ProdutoController.acessorios)
 
-router.get('/carrinho', (req, res, next) => {
-  res.render('carrinho')
-})
-
 router.get('/compra', (req, res, next) => {
   res.render('compraRealizada', { title: 'Compra Efetuada com Sucesso' })
 })
