@@ -12,6 +12,10 @@ router.get('/masculinoIndoor', ProdutoController.masculino)
 
 router.get('/acessoriosIndoor', ProdutoController.acessorios)
 
+router.get('/carrinho', (req, res, next) => {
+  res.render('carrinho')
+})
+
 router.get('/compra', (req, res, next) => {
   res.render('compraRealizada', { title: 'Compra Efetuada com Sucesso' })
 })
@@ -21,3 +25,4 @@ router.get('/search', ProdutoController.searchProducts)
 router.get('/:id/compra', ProdutoController.productPurchased)
 
 module.exports = router
+
