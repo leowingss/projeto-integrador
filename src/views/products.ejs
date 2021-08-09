@@ -41,6 +41,7 @@
 
                         <span>R$<%= produto.preco %> </span>
                         <a href="/carrinho/<%= produto.id %>/add">Adicionar ao carrinho</a>
+                        <a href="/produto/<%= produto.id %>/compra">Finalizar Compra</a>
 
                         <% if (produto.quantidadeNoCarrinho) { %>
                             <a href="/carrinho/<%= produto.id %>/remove">Remover do carrinho</a>
